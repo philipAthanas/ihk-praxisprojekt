@@ -1,5 +1,9 @@
 <template>
-  <Tutorial />
+  <div class="container">
+    <HeroApp />
+    <GridRasta />
+    <DevTeam />
+  </div>
 </template>
 
 <script>
