@@ -67,6 +67,7 @@ export default {
         width: 16.5rem;
         justify-content: center;
         height: auto;
+        padding: 6rem 0;
     }
     @media (max-width: 500px) {
         .Hero {

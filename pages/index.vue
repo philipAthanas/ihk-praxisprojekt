@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <HeroApp />
-    <GridRasta />
     <DevTeam />
+    <GridRasta />
   </div>
 </template>
 

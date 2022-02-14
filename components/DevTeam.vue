@@ -1,12 +1,15 @@
 <template>
   <div class="card-container">
     <b-row>
+      <b-col>Team name</b-col>
+    </b-row>
+    <b-row>
       <b-col>
         <div>
           <b-card
             no-body
             style="max-width: 15rem;"
-            img-src="https://www.cmshs-bloggt.de/wp-content/uploads/2017/04/004342_hi-res-600x400.jpg"
+            img-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo3RL-xS_5U13YPec8gtjMNnEvNKwZJmmFjfYy6GS6Z1Y-2UmmiYjf9QvI2CyTObh3Plk&usqp=CAU"
             img-alt="Mitarbeiter 1"
             img-top
           >
@@ -17,7 +20,7 @@
             </template>
 
             <b-card-body>
-              <b-card-title>Web-Developer</b-card-title>
+              <b-card-title>Web<br>Developer</b-card-title>
               <b-card-sub-title class="mb-2">Kein Plan von nuxtJS</b-card-sub-title>
               <b-card-text>
                 Dev-Team
@@ -85,7 +88,7 @@
             </template>
 
             <b-card-body>
-              <b-card-title>Data Scientist</b-card-title>
+              <b-card-title>Data<br>Scientist</b-card-title>
               <b-card-sub-title class="mb-2">Big Data Expert</b-card-sub-title>
               <b-card-text>
                 Dev-Team
