@@ -5,7 +5,7 @@
         <div class="text-container">
           <h1 class="header">Integr8</h1>
           <h3 class="subtitle">Organigramm</h3>
-          <p class="snippet">Lorem ipsum dolor sit amet, con adipisicing elit. Iste iusto illum quidem asperiores, cum nisi aperiam eius ipsa sapiente odit!</p>
+          <p class="snippet">Alle Teams und alle Mitarbeitenden der INTEGR8 media GmbH auf einen Blick. Wählbar in der Übersicht als Funktionseinheit oder in der personalisierten Detailansicht.</p>
         </div>
       </b-col>
       <b-col>
@@ -67,7 +67,7 @@ export default {
         width: 16.5rem;
         justify-content: center;
         height: auto;
-        padding: 6rem 0;
+        padding: 7rem 0;
     }
     @media (max-width: 500px) {
         .Hero {

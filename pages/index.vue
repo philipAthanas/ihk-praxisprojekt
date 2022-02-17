@@ -1,8 +1,10 @@
 <template>
   <div class="container">
     <HeroApp />
-    <DevTeam />
+    <GF />
     <GridRasta />
+    <DevTeam />
+    <ScrollAnimation />
   </div>
 </template>
 
