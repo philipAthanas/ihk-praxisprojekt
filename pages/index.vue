@@ -1,16 +1,11 @@
 <template>
-  <div class="container">
-    <HeroSection /> 
-
-  </div>
+  <HeroSection />
 </template>
 
 <script>
 export default {
-  name: 'IndexPage'
-}
+  name: "IndexPage",
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

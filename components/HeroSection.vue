@@ -1,11 +1,11 @@
 <template>
-  <div class="container">
-    <div class="element item1">1: orange</div>
-    <div class="element item2">2: green</div>
-    <div class="element item3">3: violet</div>
-    <div class="element item4">4: pink</div>
-    <div class="element item5">5: blue</div>
-    <div class="element item6">6: brown</div>
+  <div class="header">
+    <div class="box box1">1: titel_text</div>
+    <div class="box box2">2: trennung</div>
+    <div class="box box3">3: team1</div>
+    <div class="box box4">4: team2</div>
+    <div class="box box5">5: logo</div>
+
     <!--
     <div class="element item7">7</div>
     <div class="element item8">8</div>
