@@ -1,10 +1,7 @@
 <template>
   <div class="container">
-    <HeroApp />
-    <GF />
-    <GridRasta />
-    <DevTeam />
-    <ScrollAnimation />
+    <HeroSection /> 
+
   </div>
 </template>
 
@@ -13,3 +10,7 @@ export default {
   name: 'IndexPage'
 }
 </script>
+
+<style>
+
+</style>

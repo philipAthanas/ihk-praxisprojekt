@@ -6,6 +6,9 @@
     <b-row>
       <b-col>
         <div>
+          <div data-aos="flip-left"
+           data-aos-easing="ease-out-cubic"
+           data-aos-duration="2000">
           <b-card
             no-body
             style="max-width: 15rem;"
@@ -38,10 +41,14 @@
             </b-card-body>
             <b-card-footer>Kontakt Slack</b-card-footer>
           </b-card>
+          </div>
         </div>
       </b-col>
       <b-col>
         <div>
+          <div data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
           <b-card
             no-body
             style="max-width: 15rem"
@@ -72,10 +79,14 @@
 
             <b-card-footer>Kontakt Slack</b-card-footer>
           </b-card>
+         </div>
         </div>
       </b-col>
       <b-col>
         <div>
+          <div data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
           <b-card
             no-body
             style="max-width: 15rem"
@@ -106,6 +117,7 @@
 
             <b-card-footer>Kontakt Slack</b-card-footer>
           </b-card>
+          </div>
         </div>
       </b-col>
     </b-row>
@@ -115,13 +127,14 @@
 <script>
 export default {}
 </script>
-
+<!--
 <style scoped>
 .card-container {
-    margin-top: 6rem;
+    margin-top: 10rem;
     margin-bottom: 6rem;
 }
 </style>
+-->
 
 <!--
 <style lang="scss" scoped>

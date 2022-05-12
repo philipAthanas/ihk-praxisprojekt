@@ -1,13 +1,16 @@
 <template>
+ <div data-aos="flip-left">
   <b-row class="Avatare">
-    <b-col>
-      <div>
-        <p><strong>Developement Team</strong><p />
-        <div class="Kreisbilder">
+    <b-col> 
+        <div>              
+          <p><strong>Developement Team</strong><p />
+          <div class="Kreisbilder">
           <b-avatar variant="info"></b-avatar>
           <b-avatar variant="secondary"></b-avatar>
           <b-avatar variant="primary"></b-avatar>
-        </div>
+          </div>  
+        </div> 
+      <div>
         <b-list-group style="max-width: 300px;">
           <b-list-group-item class="d-flex align-items-center">
             <b-avatar variant="primary"></b-avatar>
@@ -82,6 +85,7 @@
       </div>
     </b-col>
   </b-row>
+ </div> 
 </template>
 
 <script>

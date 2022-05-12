@@ -1,0 +1,7 @@
+/*.basic-grid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 96px auto 72px;
+}*/
+

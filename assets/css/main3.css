@@ -1,0 +1,39 @@
+.container {
+  background-color: #eee;
+  width: 100%;
+  margin: 30px auto;
+
+  display: grid;
+  grid-template-rows: 150px 150px;
+  grid-template-columns: 150px 150px 150px;
+
+}
+
+.item1 {
+  background-color: orange;
+
+}
+
+.item2 {
+  background-color: greenyellow;
+
+}
+
+.item3 {
+  background-color: violet;
+  
+}
+
+.item4 {
+  background-color: pink;
+  
+}
+
+.item5 {
+  background-color: blue;
+  
+}
+
+.item6 {
+  background-color: brown;
+}
