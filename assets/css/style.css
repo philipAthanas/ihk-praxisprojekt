@@ -1,14 +1,18 @@
 * {box-sizing: border-box;}
 
+.header, .body {
+  width: 100vw;
+  /* margin: 30px auto; */
+  padding: 10% 7%;
+  display: grid;
+
+}
+
 .header {
   background-color: #eee;
-  width: 100%;
-  margin: 30px auto;
-  padding: 30px;
-
-  display: grid;
-  grid-template-rows: repeat (5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(5, 1fr);
+ 
 
 }
 
@@ -146,6 +150,19 @@
 
 .box15 {
   background-color: grey;
+
+}
+
+/* BodyComponent */ 
+
+.body {
+ 
+  min-height: 1535px;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+
+
 
 }
 

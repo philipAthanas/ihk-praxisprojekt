@@ -1,5 +1,8 @@
 <template>
-  <HeroSection />
+  <div>
+    <HeroSection />
+    <BodyComponent />
+  </div>
 </template>
 
 <script>
