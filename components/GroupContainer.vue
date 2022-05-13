@@ -3,8 +3,8 @@
     <div class="TeamColor" :style="{ backgroundColor: colorHeader }"></div>
     <div v-for="item in people" v-bind:key="item.name">
       <!-- item = frei wählbare Variable um die Keys anzusprechen die gerade im Array geloopt werden -->
-      <h1>{{ item.name }}</h1>
-      <h1>{{ item.position }}</h1>
+      <h3>{{ item.name }}</h3>
+      <h5>{{ item.position }}</h5>
     </div>
   </div>
 </template>
