@@ -5,13 +5,17 @@
     </div>
 
     <div class="box box2">
+      2
       <img
-        src="/Users/philip/Documents/Projects/Integr8/i8-plattform/Organigramm/i8-organigramm-2/grid-bilder/Line 11.png"
-        alt="SVG mit Trennlinie"
+        class="trenlinie"
+        :src="require('../grid-bilder/Line 11.png')"
+        fluid
+        alt="png mit Trennlinie"
       />
     </div>
 
     <div class="box box3">
+      3
       <div id="square-border">
         <p>3: Developement</p>
         <div id="circle"></div>
@@ -26,10 +30,13 @@
         <div id="text">Operation</div>
       </div>
     </div>
+
     <div class="box box5">
+      5
       <img
-        src="grid-bilder/i8-logo.png"
-        class="img-fluid"
+        class="i8-logo"
+        :src="require('../grid-bilder/i8-logo.png')"
+        fluid
         alt="INTEGER8 Logo"
       />
     </div>
