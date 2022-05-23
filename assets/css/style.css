@@ -1,8 +1,9 @@
 * {box-sizing: border-box;}
 
 @font-face {
-  font-family: "Proxima Nova Bold";
+  font-family: "ProximaNova";
   src: url("/i8-Fonts/ProximaNova-Bold.otf") format("otf");  /*font anpassen und file unter assets ablegen */
+  src: url("/i8-Fonts/ProximaNova.otf") format("otf");
 }
 
 .header, .body {
@@ -11,14 +12,14 @@
   padding: 10% 7%;
   display: grid;
   justify-content: center;
-  font-family: 'Proxima Nova Bold' !important;
+  font-family: 'ProximaNova-Bold' !important;
 
 }
 
 .header {
   background-color: rgb(255, 255, 255);
   grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: 2.5fr 2px 0.3fr repeat(3, 1fr);
+  grid-template-columns: 2.5fr 2px 0.3fr repeat(2, 1fr);
   grid-template-areas: 
   "box1 box2 . box3 box4  box8" 
   "box1 box2 . box6 box7 ."
@@ -38,74 +39,111 @@
   background-color: rgb(255, 255, 255);
   
   grid-area: box1;
+  margin-top: 0.5rem;
   
+}
+
+.titel {
+  font-family: 'ProximaNova-Bold' !important;
+  font-size: 60px;
   font-weight: 800;
-  font-size: 30px;
+  line-height: 40px;
+  font-style: normal;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+
+  border: 1px solid #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   
-  justify-content: center;
-  
+}
+.i8-text {
+  font-family: 'Proxima Nova' !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+
 }
 
 .box2  {
 
   grid-area: box2;
-  display: flex;
-  align-self: center; 
-
+  margin-left: 2rem;
+  margin-bottom: 3.5rem;
 }
 
 .box3 {
   
   grid-area: box3;
-  font-family: 'Proxima Nova';
+  font-family: 'ProximaNova';
   text-align: center;
+  margin-right: 2.2rem;
+
   
 }
 
 .box4 {
   
   grid-area: box4;
- 
+  font-family: 'Proxima Nova';
+  text-align: center;
+  margin-left: 1.7rem;
+  
 }
 
 .box5 {
-  justify-content: top;
+  justify-content: center;
   grid-area: box5;
+  margin-right: 2.2rem;
+  
 }
 
 .box6 {
 
   grid-area: box6;
-  background-color: rgb(255, 255, 255);
-  
-
-  font-weight: 400;
-  color: rgba(0, 0, 0, 1);
-  font-size: 12px;
-
   justify-content: center;
-
-
+  margin-right: 2.2rem;
+ 
 }
 
 .box7 {
   
   grid-area: box7;
+  justify-content: center;
+  margin-left: 1.7rem;
 }
 
 .box8 {
   
   grid-area: box8;
+  margin-left: 5rem;
 }
 
 /* BodyComponent */ 
 
 .body {
  
+  /*
   min-height: 1535px;
   grid-template-rows: repeat(10, 1fr);
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px;
+*/
+  background-color: rgb(229, 229, 229);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-areas: 
+  "team1 team2 . . team5 team6" 
+  "team1 team2 team3 team4 team5 team6" 
+  "team1 team2 team3 team4 team5 team6" 
+  "team1 team2 team3 team4 team5 team6" 
+  "team1 team2 team3 team4 team5 team6" 
+  "team1 team2 team3 team4 team5 team6" 
+  "team1 team2 team3 team4 team5 team6" 
+  "team1 team2 team3 team4 team5 team6" 
+  "team1 team2 team3 team4 team5 team6" 
+  "team1 team2 team3 team4 team5 team6";
 
 
 

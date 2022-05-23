@@ -1,33 +1,45 @@
 <template>
   <div class="body">
-    <GroupContainer :people="this.teamDev.CTO" :colorHeader="'green'" />
-    <GroupContainer
-      :people="this.teamDev.DevelopementTeam"
-      :colorHeader="'green'"
-    />
-    <GroupContainer :people="this.teamStrategy.CSO" :colorHeader="'pink'" />
-    <GroupContainer
-      :people="this.teamStrategy.StrategyTeam"
-      :colorHeader="'pink'"
-    />
-    <GroupContainer
-      :people="this.teamCreative.LeadCreative"
-      :colorHeader="'orange'"
-    />
-    <GroupContainer
-      :people="this.teamCreative.CreativeTeam"
-      :colorHeader="'orange'"
-    />
-    <GroupContainer :people="this.teamOperation.COO" :colorHeader="'red'" />
-    <GroupContainer
-      :people="this.teamOperation.OperationTeam"
-      :colorHeader="'red'"
-    />
-    <GroupContainer :people="this.teamMarketing.CMO" :colorHeader="'blue'" />
-    <GroupContainer
-      :people="this.teamMarketing.MarketingTeam"
-      :colorHeader="'blue'"
-    />
+    <div class="team1">
+      <GroupContainer :people="this.teamDev.CTO" :colorHeader="'green'" />
+      <GroupContainer
+        :people="this.teamDev.DevelopementTeam"
+        :colorHeader="'green'"
+      />
+    </div>
+    <div class="team2">
+      <GroupContainer :people="this.teamStrategy.CSO" :colorHeader="'pink'" />
+      <GroupContainer
+        :people="this.teamStrategy.StrategyTeam"
+        :colorHeader="'pink'"
+      />
+    </div>
+    <div class="team3">
+      <GroupContainer
+        :people="this.teamCreative.LeadCreative"
+        :colorHeader="'orange'"
+      />
+    </div>
+    <div class="team4">
+      <GroupContainer
+        :people="this.teamCreative.CreativeTeam"
+        :colorHeader="'orange'"
+      />
+    </div>
+    <div class="team5">
+      <GroupContainer :people="this.teamOperation.COO" :colorHeader="'red'" />
+      <GroupContainer
+        :people="this.teamOperation.OperationTeam"
+        :colorHeader="'red'"
+      />
+    </div>
+    <div class="team6">
+      <GroupContainer :people="this.teamMarketing.CMO" :colorHeader="'blue'" />
+      <GroupContainer
+        :people="this.teamMarketing.MarketingTeam"
+        :colorHeader="'blue'"
+      />
+    </div>
   </div>
 </template>
 

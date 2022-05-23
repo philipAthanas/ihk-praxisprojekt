@@ -1,15 +1,16 @@
 <template>
   <div class="header">
     <div class="box box1">
-      <span class="titel">WIR SIND INTEGR8.</span>
+      <span class="titel">WIR SIND INTEGR8.</span><br />
       <span class="i8-text"
         ><p>
-          6-11: Als Architekt für den digitalen Raum planen, organisieren und
-          lenken wir außergewöhnliche Projekte. Wir entwickeln individuelle
-          Lösungen, die Technologie, Kreation und Aktivierung zielführend
-          vereinen. Um unser Ziel zu erreichen, bieten wir außergewöhnlichen
-          Talenten eine Umgebung, in der sie neues lernen wollen und inspiriert
-          arbeiten können.
+          <br />
+          Als Architekt für den digitalen Raum planen, organisieren und lenken
+          wir außergewöhnliche Projekte. Wir entwickeln individuelle Lösungen,
+          die Technologie, Kreation und Aktivierung zielführend vereinen. Um
+          unser Ziel zu erreichen, bieten wir außergewöhnlichen Talenten eine
+          Umgebung, in der sie neues lernen wollen und inspiriert arbeiten
+          können.
         </p>
       </span>
     </div>
