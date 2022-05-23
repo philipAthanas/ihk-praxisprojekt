@@ -1,9 +1,9 @@
 * {box-sizing: border-box;}
+h5 {margin: 0px;}
 
 @font-face {
-  font-family: "ProximaNova";
-  src: url("/i8-Fonts/ProximaNova-Bold.otf") format("otf");  /*font anpassen und file unter assets ablegen */
-  src: url("/i8-Fonts/ProximaNova.otf") format("otf");
+  font-family: "ProximaNova-Bold";
+  src: local("ProximaNova-Bold"), url(./i8-Fonts/ProximaNova-Bold.otf) format("opentype");  /*font anpassen und file unter assets ablegen ... opentype zum setzen der schrift */
 }
 
 .header, .body {
@@ -57,7 +57,7 @@
   
 }
 .i8-text {
-  font-family: 'Proxima Nova' !important;
+  font-family: 'ProximaNova-Bold' !important;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -76,7 +76,7 @@
 .box3 {
   
   grid-area: box3;
-  font-family: 'ProximaNova';
+  font-family: 'ProximaNova-Bold';
   text-align: center;
   margin-right: 2.2rem;
 
@@ -86,7 +86,7 @@
 .box4 {
   
   grid-area: box4;
-  font-family: 'Proxima Nova';
+  font-family: 'ProximaNova-Bold';
   text-align: center;
   margin-left: 1.7rem;
   
@@ -131,30 +131,75 @@
   grid-gap: 10px;
 */
   background-color: rgb(229, 229, 229);
-  grid-template-rows: repeat(10, 1fr);
+  grid-template-rows: 180px 180px 180px 180px 700px;
   grid-template-columns: repeat(6, 1fr);
   grid-template-areas: 
-  "team1 team2 . . team5 team6" 
+  "team1 team2 . . team3 team4" 
   ". . . . . ." 
-  ". team2 team3 team4 . ." 
+  ". team5 team6 team7 . ." 
   ". . . . . ." 
-  "team1 team2 team3 team4 team5 team6" 
-  "team1 team2 team3 . team5 team6" 
-  "team1 . team3 . team5 team6" 
-  "team1 . team3 . . team6" 
-  ". . team3 . . team6" 
-  ". . . . . .";
+  "team8 team9 team10 team11 team12 team13";
 
 }
 
-.employee {
-  display: flex;
-  background: #fff;
-  padding: 22px;
+.team1 {
+  grid-area: team1;
+}
+
+.team2 {
+  grid-area: team2;
+}
+
+.team3 {
+  grid-area: team3;
+}
+
+.team4 {
+  grid-area: team4;
+}
+
+.team5 {
+  grid-area: team5;
+}
+
+.team6 {
+  grid-area: team6;
+}
+
+.team7 {
+  grid-area: team7;
+}
+
+.team8 {
+  grid-area: team8;
+}
+
+.team9 {
+  grid-area: team9;
+}
+
+.team10 {
+  grid-area: team10;
+}
+
+.team11 {
+  grid-area: team11;
+}
+.team12 {
+  grid-area: team12;
+}
+
+.team13 {
+  grid-area: team13;
+}
+
+
+div[class^="team"] {           /* jedes div dessen Klasse mit "Team" beginnt wird angesprochen -- ^ = wenn die Klasse mit dem String anfängt*/
+  background-color: #fff;
   text-align: center;
-  align-items: center;
-
+  font-family: 'ProximaNova-Bold' !important;
 }
+
 
 /* .icon {
   grid-bilder/Ellipse 1.png

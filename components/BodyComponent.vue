@@ -2,6 +2,8 @@
   <div class="body">
     <div class="team1">
       <GroupContainer :people="this.teamDev.CTO" :colorHeader="'green'" />
+    </div>
+    <div class="team8">
       <GroupContainer
         :people="this.teamDev.DevelopementTeam"
         :colorHeader="'green'"
@@ -9,32 +11,56 @@
     </div>
     <div class="team2">
       <GroupContainer :people="this.teamStrategy.CSO" :colorHeader="'pink'" />
+    </div>
+    <div class="team5">
+      <GroupContainer
+        :people="this.teamStrategy.Director"
+        :colorHeader="'pink'"
+      />
+    </div>
+    <div class="team9">
       <GroupContainer
         :people="this.teamStrategy.StrategyTeam"
         :colorHeader="'pink'"
       />
     </div>
-    <div class="team3">
+    <div class="team6">
       <GroupContainer
         :people="this.teamCreative.LeadCreative"
         :colorHeader="'orange'"
       />
     </div>
-    <div class="team4">
+    <div class="team10">
       <GroupContainer
         :people="this.teamCreative.CreativeTeam"
         :colorHeader="'orange'"
       />
     </div>
-    <div class="team5">
+    <div class="team7">
+      <GroupContainer
+        :people="this.teamContent.LeadContent"
+        :colorHeader="'orange'"
+      />
+    </div>
+    <div class="team11">
+      <GroupContainer
+        :people="this.teamContent.ContentTeam"
+        :colorHeader="'orange'"
+      />
+    </div>
+    <div class="team3">
       <GroupContainer :people="this.teamOperation.COO" :colorHeader="'red'" />
+    </div>
+    <div class="team12">
       <GroupContainer
         :people="this.teamOperation.OperationTeam"
         :colorHeader="'red'"
       />
     </div>
-    <div class="team6">
+    <div class="team4">
       <GroupContainer :people="this.teamMarketing.CMO" :colorHeader="'blue'" />
+    </div>
+    <div class="team13">
       <GroupContainer
         :people="this.teamMarketing.MarketingTeam"
         :colorHeader="'blue'"
@@ -61,8 +87,8 @@ export default {
       },
       teamStrategy: {
         CSO: [{ name: "FLORIS H.", position: "CSO" }],
+        Director: [{ name: "BLANCA R.", position: "Strategy Director" }],
         StrategyTeam: [
-          { name: "BLANCA R.", position: "Strategy Director" },
           { name: "DENIS H.", position: "Sr. Digital Strategist" },
           { name: "SILJA M.", position: "Jr. Strategy" },
         ],
@@ -76,6 +102,10 @@ export default {
           { name: "HANNA B.", position: "Visual Designer" },
           { name: "KATHRIN M.", position: "Graphic Designer" },
         ],
+      },
+      teamContent: {
+        LeadContent: [{ name: "HANNA B.", position: "Visual Designer" }],
+        ContentTeam: [{ name: " MELANIE K.", position: "Copywriter" }],
       },
       teamOperation: {
         COO: [{ name: "SUSANNE A.", position: "COO" }],
