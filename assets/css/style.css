@@ -131,23 +131,37 @@
   grid-gap: 10px;
 */
   background-color: rgb(229, 229, 229);
-  grid-template-rows: repeat(6, 1fr);
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-areas: 
   "team1 team2 . . team5 team6" 
+  ". . . . . ." 
+  ". team2 team3 team4 . ." 
+  ". . . . . ." 
   "team1 team2 team3 team4 team5 team6" 
-  "team1 team2 team3 team4 team5 team6" 
-  "team1 team2 team3 team4 team5 team6" 
-  "team1 team2 team3 team4 team5 team6" 
-  "team1 team2 team3 team4 team5 team6" 
-  "team1 team2 team3 team4 team5 team6" 
-  "team1 team2 team3 team4 team5 team6" 
-  "team1 team2 team3 team4 team5 team6" 
-  "team1 team2 team3 team4 team5 team6";
-
-
+  "team1 team2 team3 . team5 team6" 
+  "team1 . team3 . team5 team6" 
+  "team1 . team3 . . team6" 
+  ". . team3 . . team6" 
+  ". . . . . .";
 
 }
+
+.employee {
+  display: flex;
+  background: #fff;
+  padding: 22px;
+  text-align: center;
+  align-items: center;
+
+}
+
+/* .icon {
+  grid-bilder/Ellipse 1.png
+  grid-bilder/Star 2.png
+
+}
+*/
 /*
 .body-item1 {
 	background: blue;

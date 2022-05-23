@@ -30,5 +30,13 @@ export default {
 h4 {
   margin: 0px;
   margin-left: 15px;
+  text-transform: uppercase;
+  font-family: 'ProximaNova';
+  font-style: bold;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: Center;
+  Vertical-align: Top;
+  Letter-spacing: -1%;
 }
 </style>
