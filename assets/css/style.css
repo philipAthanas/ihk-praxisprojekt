@@ -1,34 +1,37 @@
-* {box-sizing: border-box;}
-h5 {margin: 0px;}
+* {
+  box-sizing: border-box;
+}
+h5 {
+  margin: 0px;
+}
 
 @font-face {
   font-family: "ProximaNova-Bold";
-  src: local("ProximaNova-Bold"), url(./i8-Fonts/ProximaNova-Bold.otf) format("opentype");  /*font anpassen und file unter assets ablegen ... opentype zum setzen der schrift */
+  src: local("ProximaNova-Bold"),
+    url(./i8-Fonts/ProximaNova-Bold.otf) format("opentype"); /*font anpassen und file unter assets ablegen ... opentype zum setzen der schrift */
 }
 
-.header, .body {
+.header,
+.body {
   width: 100vw;
   /* margin: 30px auto; */
   padding: 10% 7%;
   display: grid;
-  justify-content: center;
-  font-family: 'ProximaNova-Bold' !important;
-
+  /* justify-content: center; */
+  font-family: "ProximaNova-Bold" !important;
 }
 
 .header {
   background-color: rgb(255, 255, 255);
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: 2.5fr 2px 0.3fr repeat(2, 1fr);
-  grid-template-areas: 
-  "box1 box2 . box3 box4  box8" 
-  "box1 box2 . box6 box7 ."
-  "box1 box2 . box5 . ." ;
+  grid-template-areas:
+    "box1 box2 . box3 box4  box8"
+    "box1 box2 . box6 box7 ."
+    "box1 box2 . box5 . .";
 
-  
   color: rgba(0, 0, 0, 1);
   text-align: left;
- 
 }
 
 .box {
@@ -37,14 +40,13 @@ h5 {margin: 0px;}
 
 .box1 {
   background-color: rgb(255, 255, 255);
-  
+
   grid-area: box1;
   margin-top: 0.5rem;
-  
 }
 
 .titel {
-  font-family: 'ProximaNova-Bold' !important;
+  font-family: "ProximaNova-Bold" !important;
   font-size: 60px;
   font-weight: 800;
   line-height: 40px;
@@ -52,89 +54,94 @@ h5 {margin: 0px;}
   letter-spacing: -0.01em;
   text-transform: uppercase;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  
 }
 .i8-text {
-  font-family: 'ProximaNova-Bold' !important;
+  font-family: "ProximaNova-Bold" !important;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 36px;
   letter-spacing: 0.01em;
-
 }
 
-.box2  {
-
+.box2 {
   grid-area: box2;
   margin-left: 2rem;
   margin-bottom: 3.5rem;
 }
 
 .box3 {
-  
   grid-area: box3;
-  font-family: 'ProximaNova-Bold';
+  font-family: "ProximaNova-Bold";
   text-align: center;
   margin-right: 2.2rem;
-
-  
 }
 
 .box4 {
-  
   grid-area: box4;
-  font-family: 'ProximaNova-Bold';
+  font-family: "ProximaNova-Bold";
   text-align: center;
   margin-left: 1.7rem;
-  
 }
 
 .box5 {
   justify-content: center;
   grid-area: box5;
   margin-right: 2.2rem;
-  
 }
 
 .box6 {
-
   grid-area: box6;
   justify-content: center;
   margin-right: 2.2rem;
- 
 }
 
 .box7 {
-  
   grid-area: box7;
   justify-content: center;
   margin-left: 1.7rem;
 }
 
 .box8 {
-  
   grid-area: box8;
   margin-left: 5rem;
 }
 
-/* BodyComponent */ 
+/* BodyComponent */
 
 .body {
- 
   background-color: rgb(229, 229, 229);
-  grid-template-rows: 180px 180px 180px 180px max-content;
-  grid-template-columns: repeat(6, 1fr);
   column-gap: 6rem;
-  grid-template-areas: 
-  "team1 team2 . . team3 team4" 
-  "line1 line2 group36 group36 line8 line9" 
-  "line1 team5 team6 team7 line8 line9" 
-  "line1 line3 line4 line10 line8 line9" 
-  "team8 team9 team10 team11 team12 team13";
-
 }
 
+.nav_home {
+  grid-template-rows: 180px 180px 180px 180px max-content;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+    "team1 team2 . . team3 team4"
+    "line1 line2 group36 group36 line8 line9"
+    "line1 team5 team6 team7 line8 line9"
+    "line1 line3 line4 line10 line8 line9"
+    "team8 team9 team10 team11 team12 team13";
+}
+
+.nav_strategy {
+  /* grid-template-columns: repeat(2, 180px);
+  grid-template-rows: minmax(100px, auto);
+  grid-template-areas: "card1 card2"; */
+  grid-template-columns: 180px 180px;
+  grid-template: "card1 card2 card3" minmax(100px, auto);
+}
+
+.card1 {
+  grid-area: card1;
+}
+.card2 {
+  grid-area: card2;
+}
+.card3 {
+  grid-area: card3;
+}
 .team1 {
   grid-area: team1;
 }
@@ -257,10 +264,11 @@ h5 {margin: 0px;}
   align-items: center;
 }
 
-div[class^="team"] {           /* jedes div dessen Klasse mit "Team" beginnt wird angesprochen -- ^ = wenn die Klasse mit dem String anfängt*/
+div[class^="team"] {
+  /* jedes div dessen Klasse mit "Team" beginnt wird angesprochen -- ^ = wenn die Klasse mit dem String anfängt*/
   background-color: #fff;
   text-align: center;
-  font-family: 'ProximaNova-Bold' !important;
+  font-family: "ProximaNova-Bold" !important;
   position: relative;
   margin-bottom: auto;
 }
@@ -268,7 +276,6 @@ div[class^="team"] {           /* jedes div dessen Klasse mit "Team" beginnt wir
 .star {
   margin-right: 5px;
 }
-
 
 /* .icon {
   grid-bilder/Ellipse 1.png

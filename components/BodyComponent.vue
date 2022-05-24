@@ -1,6 +1,15 @@
 <template>
-  <div class="body" v-if="this.nav === 'Home'">
-    <div class="team1">
+  <div
+    class="body"
+    :class="
+      this.nav === 'Home'
+        ? 'nav_home'
+        : this.nav === 'Strategy'
+        ? 'nav_strategy'
+        : 'nav_development'
+    "
+  >
+    <div class="team1" @click="nav = 'Strategy'">
       <GroupContainer
         :people="this.teamDev.CTO"
         :colorHeader="'green'"
@@ -118,6 +127,15 @@
     <div class="line10">
       <img :src="require('../grid-bilder/Line 10.png')" fluid alt="Linie 10" />
     </div>
+    <div class="card1">
+      <h1>Card1</h1>
+    </div>
+    <div class="card2">
+      <h1>Card2</h1>
+    </div>
+    <div class="card3">
+      <h1>Card3</h1>
+    </div>
   </div>
 </template>
 
@@ -128,7 +146,14 @@ export default {
     return {
       title: "Name",
       teamDev: {
-        CTO: [{ name: "BAHAR J.", position: "CTO" }],
+        CTO: [
+          {
+            name: "BAHAR J.",
+            position: "CTO",
+            tel: "623486123548",
+            mail: "bahar@integr8.com",
+          },
+        ],
         DevelopementTeam: [
           { name: "TARIK E.", position: "Fullstack Developer" },
           { name: "JAKOB S.", position: "Fullstack Developer" },
