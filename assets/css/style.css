@@ -123,12 +123,12 @@ h5 {margin: 0px;}
 .body {
  
   background-color: rgb(229, 229, 229);
-  grid-template-rows: 180px 180px 180px 180px 700px;
+  grid-template-rows: 180px 180px 180px 180px max-content;
   grid-template-columns: repeat(6, 1fr);
   column-gap: 6rem;
   grid-template-areas: 
   "team1 team2 . . team3 team4" 
-  "line1 line2 . . line8 line9" 
+  "line1 line2 group36 group36 line8 line9" 
   "line1 team5 team6 team7 line8 line9" 
   "line1 line3 line4 line10 line8 line9" 
   "team8 team9 team10 team11 team12 team13";
@@ -227,14 +227,14 @@ h5 {margin: 0px;}
   justify-content: center;
   align-items: center;
 }
+*/
 
-.line7 {
-  grid-area: line7;
+.group36 {
+  grid-area: group36;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-*/
 
 .line8 {
   grid-area: line8;
@@ -261,6 +261,12 @@ div[class^="team"] {           /* jedes div dessen Klasse mit "Team" beginnt wir
   background-color: #fff;
   text-align: center;
   font-family: 'ProximaNova-Bold' !important;
+  position: relative;
+  margin-bottom: auto;
+}
+
+.star {
+  margin-right: 5px;
 }
 
 

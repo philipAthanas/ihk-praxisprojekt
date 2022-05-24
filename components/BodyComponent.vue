@@ -1,7 +1,11 @@
 <template>
-  <div class="body">
+  <div class="body" v-if="this.nav === 'Home'">
     <div class="team1">
-      <GroupContainer :people="this.teamDev.CTO" :colorHeader="'green'" />
+      <GroupContainer
+        :people="this.teamDev.CTO"
+        :colorHeader="'green'"
+        :headIcon="true"
+      />
     </div>
     <div class="team8">
       <GroupContainer
@@ -10,12 +14,17 @@
       />
     </div>
     <div class="team2">
-      <GroupContainer :people="this.teamStrategy.CSO" :colorHeader="'pink'" />
+      <GroupContainer
+        :people="this.teamStrategy.CSO"
+        :colorHeader="'pink'"
+        :headIcon="true"
+      />
     </div>
     <div class="team5">
       <GroupContainer
         :people="this.teamStrategy.Director"
         :colorHeader="'pink'"
+        :headIcon="true"
       />
     </div>
     <div class="team9">
@@ -28,6 +37,7 @@
       <GroupContainer
         :people="this.teamCreative.LeadCreative"
         :colorHeader="'orange'"
+        :headIcon="true"
       />
     </div>
     <div class="team10">
@@ -40,6 +50,7 @@
       <GroupContainer
         :people="this.teamContent.LeadContent"
         :colorHeader="'orange'"
+        :headIcon="true"
       />
     </div>
     <div class="team11">
@@ -49,7 +60,11 @@
       />
     </div>
     <div class="team3">
-      <GroupContainer :people="this.teamOperation.COO" :colorHeader="'red'" />
+      <GroupContainer
+        :people="this.teamOperation.COO"
+        :colorHeader="'red'"
+        :headIcon="true"
+      />
     </div>
     <div class="team12">
       <GroupContainer
@@ -58,7 +73,11 @@
       />
     </div>
     <div class="team4">
-      <GroupContainer :people="this.teamMarketing.CMO" :colorHeader="'blue'" />
+      <GroupContainer
+        :people="this.teamMarketing.CMO"
+        :colorHeader="'blue'"
+        :headIcon="true"
+      />
     </div>
     <div class="team13">
       <GroupContainer
@@ -85,10 +104,11 @@
     <div class="line6">
       <img :src="require('../grid-bilder/Line 6.png')" fluid alt="Linie 6" />
     </div>
-    <div class="line7">
-      <img :src="require('../grid-bilder/Line 7.png')" fluid alt="Linie 7" />
-    </div>
     -->
+    <div class="group36">
+      <img :src="require('../grid-bilder/Group 36.png')" fluid alt="Group 36" />
+    </div>
+
     <div class="line8">
       <img :src="require('../grid-bilder/Line 8.png')" fluid alt="Linie 8" />
     </div>
@@ -157,6 +177,7 @@ export default {
           { name: "TIM F.", position: "Marketing Strategist" },
         ],
       },
+      nav: "Home",
     };
   },
 };
