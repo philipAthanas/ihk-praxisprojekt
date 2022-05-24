@@ -13,9 +13,16 @@
             alt="png mit Stern"
             v-if="item.position.length <= 3"
           />
+          <div class="icon">
+           <img
+            :src="require('../grid-bilder/Ellipse 1.png')"
+            fluid
+            alt="Icon"
+          />
           <h5>{{ item.position }}</h5>
         </div>
       </div>
+     </div>
     </div>
   </div>
 </template>
@@ -33,7 +40,7 @@ export default {
 
 .TeamColor {
   width: 100%;
-  height: 2px;
+  height: 10px;
   align-self: flex-start;
 }
 
@@ -45,4 +52,11 @@ export default {
   font-family: "ProximaNova-Bold";
   margin-bottom: 50px;
 }
+
+.icon {
+  
+  align-self: flex-start;
+  z-index: 1;
+}
+  
 </style>

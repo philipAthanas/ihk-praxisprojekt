@@ -31,7 +31,7 @@ h4 {
   margin: 0px;
   margin-left: 15px;
   text-transform: uppercase;
-  font-family: 'ProximaNova';
+  font-family: 'ProximaNova-Bold';
   font-style: bold;
   font-size: 20px;
   line-height: 40px;

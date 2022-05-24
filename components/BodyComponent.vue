@@ -66,6 +66,38 @@
         :colorHeader="'blue'"
       />
     </div>
+    <div class="line1">
+      <img :src="require('../grid-bilder/Line 1.png')" fluid alt="Linie 1" />
+    </div>
+    <div class="line2">
+      <img :src="require('../grid-bilder/Line 2.png')" fluid alt="Linie 2" />
+    </div>
+    <div class="line3">
+      <img :src="require('../grid-bilder/Line 3.png')" fluid alt="Linie 3" />
+    </div>
+    <div class="line4">
+      <img :src="require('../grid-bilder/Line 4.png')" fluid alt="Linie 4" />
+    </div>
+    <!--
+    <div class="line5">
+      <img :src="require('../grid-bilder/Line 5.png')" fluid alt="Linie 5" />
+    </div>
+    <div class="line6">
+      <img :src="require('../grid-bilder/Line 6.png')" fluid alt="Linie 6" />
+    </div>
+    <div class="line7">
+      <img :src="require('../grid-bilder/Line 7.png')" fluid alt="Linie 7" />
+    </div>
+    -->
+    <div class="line8">
+      <img :src="require('../grid-bilder/Line 8.png')" fluid alt="Linie 8" />
+    </div>
+    <div class="line9">
+      <img :src="require('../grid-bilder/Line 9.png')" fluid alt="Linie 9" />
+    </div>
+    <div class="line10">
+      <img :src="require('../grid-bilder/Line 10.png')" fluid alt="Linie 10" />
+    </div>
   </div>
 </template>
 

@@ -51,8 +51,6 @@ h5 {margin: 0px;}
   font-style: normal;
   letter-spacing: -0.01em;
   text-transform: uppercase;
-
-  border: 1px solid #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   
 }
@@ -124,20 +122,15 @@ h5 {margin: 0px;}
 
 .body {
  
-  /*
-  min-height: 1535px;
-  grid-template-rows: repeat(10, 1fr);
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 10px;
-*/
   background-color: rgb(229, 229, 229);
   grid-template-rows: 180px 180px 180px 180px 700px;
   grid-template-columns: repeat(6, 1fr);
+  column-gap: 6rem;
   grid-template-areas: 
   "team1 team2 . . team3 team4" 
-  ". . . . . ." 
-  ". team5 team6 team7 . ." 
-  ". . . . . ." 
+  "line1 line2 . . line8 line9" 
+  "line1 team5 team6 team7 line8 line9" 
+  "line1 line3 line4 line10 line8 line9" 
   "team8 team9 team10 team11 team12 team13";
 
 }
@@ -193,6 +186,76 @@ h5 {margin: 0px;}
   grid-area: team13;
 }
 
+.line1 {
+  grid-area: line1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line2 {
+  grid-area: line2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line3 {
+  grid-area: line3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line4 {
+  grid-area: line4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
+.line5 {
+  grid-area: line5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line6 {
+  grid-area: line6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line7 {
+  grid-area: line7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+*/
+
+.line8 {
+  grid-area: line8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line9 {
+  grid-area: line9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line10 {
+  grid-area: line10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 div[class^="team"] {           /* jedes div dessen Klasse mit "Team" beginnt wird angesprochen -- ^ = wenn die Klasse mit dem String anfängt*/
   background-color: #fff;
@@ -205,44 +268,5 @@ div[class^="team"] {           /* jedes div dessen Klasse mit "Team" beginnt wir
   grid-bilder/Ellipse 1.png
   grid-bilder/Star 2.png
 
-}
-*/
-/*
-.body-item1 {
-	background: blue;
-	text-align: center;
-	border: black 5px solid;
-	grid-area: area1;
-}
-.body-item2 {
-	background: red;
-	text-align: center;
-	border: black 5px solid;
-	grid-area: area2;
-}
-.body-item3 {
-	background: green;
-	text-align: center;
-	border: black 5px solid;
-	grid-area: area3;
-}
-.body-item4 {
-	background: yellow;
-	text-align: center;
-	border: black 5px solid;
-	grid-area: area4;
-}
-
-.body-item5 {
-	background: green;
-	text-align: center;
-	border: black 5px solid;
-	grid-area: area3;
-}
-.body-item6 {
-	background: yellow;
-	text-align: center;
-	border: black 5px solid;
-	grid-area: area4;
 }
 */
