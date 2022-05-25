@@ -113,7 +113,6 @@ h5 {
   background-color: rgb(229, 229, 229);
   column-gap: 6rem;
 }
-
 .nav_home {
   grid-template-rows: 180px 180px 180px 180px max-content;
   grid-template-columns: repeat(5, 1fr);
@@ -125,23 +124,16 @@ h5 {
     "team8 team9 team10 team11 team12 team13";
 }
 
-.nav_strategy {
-  /* grid-template-columns: repeat(2, 180px);
-  grid-template-rows: minmax(100px, auto);
-  grid-template-areas: "card1 card2"; */
-  grid-template-columns: 180px 180px;
-  grid-template: "card1 card2 card3" minmax(100px, auto);
+.singleGrid {
+  display: flex;
 }
 
-.card1 {
-  grid-area: card1;
+.singleGrid>div {
+  width: 180px;
+  height: auto;
 }
-.card2 {
-  grid-area: card2;
-}
-.card3 {
-  grid-area: card3;
-}
+
+
 .team1 {
   grid-area: team1;
 }

@@ -19,7 +19,10 @@
               v-if="item.position.length <= 3"
             />
             <h5>{{ item.position }}</h5>
-          </div>
+           </div>
+            <div v-if="nav !== 'Home' ">
+             <h5>{{ item.mail }}</h5>
+            </div>
         </div>
       </div>
     </div>
@@ -28,7 +31,7 @@
 
 <script>
 export default {
-  props: ["people", "colorHeader", "headIcon"],
+  props: ["people", "colorHeader", "headIcon", "nav"] ,
 };
 </script>
 
@@ -57,8 +60,6 @@ export default {
   top: -32px;
   left: 0;
   right: 0; 
-  
-
   z-index: 1;
 }
 </style>

@@ -1,112 +1,104 @@
 <template>
-  <div
-    class="body"
-    :class="
-      this.nav === 'Home'
-        ? 'nav_home'
-        : this.nav === 'Strategy'
-        ? 'nav_strategy'
-        : 'nav_development'
-    "
-  >
-    <div class="team1" @click="nav = 'Strategy'">
-      <GroupContainer
-        :people="this.teamDev.CTO"
-        :colorHeader="'green'"
-        :headIcon="true"
-      />
-    </div>
-    <div class="team8">
-      <GroupContainer
-        :people="this.teamDev.DevelopementTeam"
-        :colorHeader="'green'"
-      />
-    </div>
-    <div class="team2">
-      <GroupContainer
-        :people="this.teamStrategy.CSO"
-        :colorHeader="'pink'"
-        :headIcon="true"
-      />
-    </div>
-    <div class="team5">
-      <GroupContainer
-        :people="this.teamStrategy.Director"
-        :colorHeader="'pink'"
-        :headIcon="true"
-      />
-    </div>
-    <div class="team9">
-      <GroupContainer
-        :people="this.teamStrategy.StrategyTeam"
-        :colorHeader="'pink'"
-      />
-    </div>
-    <div class="team6">
-      <GroupContainer
-        :people="this.teamCreative.LeadCreative"
-        :colorHeader="'orange'"
-        :headIcon="true"
-      />
-    </div>
-    <div class="team10">
-      <GroupContainer
-        :people="this.teamCreative.CreativeTeam"
-        :colorHeader="'orange'"
-      />
-    </div>
-    <div class="team7">
-      <GroupContainer
-        :people="this.teamContent.LeadContent"
-        :colorHeader="'orange'"
-        :headIcon="true"
-      />
-    </div>
-    <div class="team11">
-      <GroupContainer
-        :people="this.teamContent.ContentTeam"
-        :colorHeader="'orange'"
-      />
-    </div>
-    <div class="team3">
-      <GroupContainer
-        :people="this.teamOperation.COO"
-        :colorHeader="'red'"
-        :headIcon="true"
-      />
-    </div>
-    <div class="team12">
-      <GroupContainer
-        :people="this.teamOperation.OperationTeam"
-        :colorHeader="'red'"
-      />
-    </div>
-    <div class="team4">
-      <GroupContainer
-        :people="this.teamMarketing.CMO"
-        :colorHeader="'blue'"
-        :headIcon="true"
-      />
-    </div>
-    <div class="team13">
-      <GroupContainer
-        :people="this.teamMarketing.MarketingTeam"
-        :colorHeader="'blue'"
-      />
-    </div>
-    <div class="line1">
-      <img :src="require('../grid-bilder/Line 1.png')" fluid alt="Linie 1" />
-    </div>
-    <div class="line2">
-      <img :src="require('../grid-bilder/Line 2.png')" fluid alt="Linie 2" />
-    </div>
-    <div class="line3">
-      <img :src="require('../grid-bilder/Line 3.png')" fluid alt="Linie 3" />
-    </div>
-    <div class="line4">
-      <img :src="require('../grid-bilder/Line 4.png')" fluid alt="Linie 4" />
-    </div>
-    <!--
+  <div>
+    <div class="body nav_home" v-if="nav === 'Home'">
+      <div class="team1">
+        <GroupContainer
+          :people="this.teamDev.CTO"
+          :colorHeader="'#00eebb'"
+          :headIcon="true"
+        />
+      </div>
+      <div class="team8">
+        <GroupContainer
+          :people="this.teamDev.DevelopementTeam"
+          :colorHeader="'#00eebb'"
+        />
+      </div>
+      <div class="team2">
+        <GroupContainer
+          :people="this.teamStrategy.CSO"
+          :colorHeader="'#BD00FF'"
+          :headIcon="true"
+        />
+      </div>
+      <div class="team5">
+        <GroupContainer
+          :people="this.teamStrategy.Director"
+          :colorHeader="'BD00FF'"
+          :headIcon="true"
+        />
+      </div>
+      <div class="team9">
+        <GroupContainer
+          :people="this.teamStrategy.StrategyTeam"
+          :colorHeader="'#BD00FF'"
+        />
+      </div>
+      <div class="team6">
+        <GroupContainer
+          :people="this.teamCreative.LeadCreative"
+          :colorHeader="'#FF7A00'"
+          :headIcon="true"
+        />
+      </div>
+      <div class="team10">
+        <GroupContainer
+          :people="this.teamCreative.CreativeTeam"
+          :colorHeader="'#FF7A00'"
+        />
+      </div>
+      <div class="team7">
+        <GroupContainer
+          :people="this.teamContent.LeadContent"
+          :colorHeader="'#FF7A00'"
+          :headIcon="true"
+        />
+      </div>
+      <div class="team11">
+        <GroupContainer
+          :people="this.teamContent.ContentTeam"
+          :colorHeader="'#FF7A00'"
+        />
+      </div>
+      <div class="team3">
+        <GroupContainer
+          :people="this.teamOperation.COO"
+          :colorHeader="'#FF0000'"
+          :headIcon="true"
+        />
+      </div>
+      <div class="team12">
+        <GroupContainer
+          :people="this.teamOperation.OperationTeam"
+          :colorHeader="'#FF0000'"
+        />
+      </div>
+      <div class="team4">
+        <GroupContainer
+          :people="this.teamMarketing.CMO"
+          :colorHeader="'#0075FF'"
+          :headIcon="true"
+        />
+      </div>
+      <div class="team13">
+        <GroupContainer
+          :people="this.teamMarketing.MarketingTeam"
+          :colorHeader="'#0075FF'"
+        />
+      </div>
+      <div class="line1">
+        <img :src="require('../grid-bilder/Line 1.png')" fluid alt="Linie 1" />
+      </div>
+      <div class="line2">
+        <img :src="require('../grid-bilder/Line 2.png')" fluid alt="Linie 2" />
+      </div>
+      <div class="line3">
+        <img :src="require('../grid-bilder/Line 3.png')" fluid alt="Linie 3" />
+      </div>
+      <div class="line4">
+        <img :src="require('../grid-bilder/Line 4.png')" fluid alt="Linie 4" />
+      </div>
+      <!--
     <div class="line5">
       <img :src="require('../grid-bilder/Line 5.png')" fluid alt="Linie 5" />
     </div>
@@ -114,33 +106,118 @@
       <img :src="require('../grid-bilder/Line 6.png')" fluid alt="Linie 6" />
     </div>
     -->
-    <div class="group36">
-      <img :src="require('../grid-bilder/Group 36.png')" fluid alt="Group 36" />
+      <div class="group36">
+        <img
+          :src="require('../grid-bilder/Group 36.png')"
+          fluid
+          alt="Group 36"
+        />
+      </div>
+
+      <div class="line8">
+        <img :src="require('../grid-bilder/Line 8.png')" fluid alt="Linie 8" />
+      </div>
+      <div class="line9">
+        <img :src="require('../grid-bilder/Line 9.png')" fluid alt="Linie 9" />
+      </div>
+      <div class="line10">
+        <img
+          :src="require('../grid-bilder/Line 10.png')"
+          fluid
+          alt="Linie 10"
+        />
+      </div>
     </div>
 
-    <div class="line8">
-      <img :src="require('../grid-bilder/Line 8.png')" fluid alt="Linie 8" />
+    <div
+      class="singleGrid"
+      v-for="teamMember in [
+        ...this.teamDev.CTO,
+        ...this.teamDev.DevelopementTeam,
+      ]"
+      v-bind:key="teamMember.name"
+      v-if="nav === 'Developement'"
+    >
+      <GroupContainer
+        :people="[teamMember]"
+        :colorHeader="'#00eebb'"
+        :headIcon="true"
+        :nav="nav"
+      />
     </div>
-    <div class="line9">
-      <img :src="require('../grid-bilder/Line 9.png')" fluid alt="Linie 9" />
+    <div
+      class="singleGrid"
+      v-for="teamMember in [
+        ...this.teamStrategy.CSO,
+        ...this.teamStrategy.Director,
+        ...this.teamStrategy.StrategyTeam,
+      ]"
+      v-bind:key="teamMember.name"
+      v-if="nav === 'Strategy'"
+    >
+      <GroupContainer
+        :people="[teamMember]"
+        :colorHeader="'#00eebb'"
+        :headIcon="true"
+        :nav="nav"
+      />
     </div>
-    <div class="line10">
-      <img :src="require('../grid-bilder/Line 10.png')" fluid alt="Linie 10" />
+    <div
+      class="singleGrid"
+      v-for="teamMember in [
+        ...this.teamCreative.LeadCreative,
+        ...this.teamCreative.CreativeTeam,
+        ...this.teamContent.LeadContent,
+        ...this.teamContent.ContentTeam,
+      ]"
+      v-bind:key="teamMember.name"
+      v-if="nav === 'Creative'"
+    >
+      <GroupContainer
+        :people="[teamMember]"
+        :colorHeader="'#00eebb'"
+        :headIcon="true"
+        :nav="nav"
+      />
     </div>
-    <div class="card1">
-      <h1>Card1</h1>
+    <div
+      class="singleGrid"
+      v-for="teamMember in [
+        ...this.teamOperation.COO,
+        ...this.teamOperation.OperationTeam,
+      ]"
+      v-bind:key="teamMember.name"
+      v-if="nav === 'Operation'"
+    >
+      <GroupContainer
+        :people="[teamMember]"
+        :colorHeader="'#00eebb'"
+        :headIcon="true"
+        :nav="nav"
+      />
     </div>
-    <div class="card2">
-      <h1>Card2</h1>
-    </div>
-    <div class="card3">
-      <h1>Card3</h1>
+    <div
+      class="singleGrid"
+      v-for="teamMember in [
+        ...this.teamMarketing.CMO,
+        ...this.teamMarketing.MarketingTeam,
+      ]"
+      v-bind:key="teamMember.name"
+      v-if="nav === 'Marketing'"
+    >
+      <GroupContainer
+        :people="[teamMember]"
+        :colorHeader="'#00eebb'"
+        :headIcon="true"
+        :nav="nav"
+      />
     </div>
   </div>
 </template>
 
 <script>
 export default {
+  props: ["nav"],
   css: ["~/assets/css/style.css"],
   data() {
     return {
@@ -150,59 +227,213 @@ export default {
           {
             name: "BAHAR J.",
             position: "CTO",
-            tel: "623486123548",
-            mail: "bahar@integr8.com",
+            tel: "MOBIL: + 49 177 8237238",
+            mail: "MAIL: b.jawadi@integr8.com",
           },
         ],
         DevelopementTeam: [
-          { name: "TARIK E.", position: "Fullstack Developer" },
-          { name: "JAKOB S.", position: "Fullstack Developer" },
-          { name: "MARVIN K.", position: "Web Developer" },
-          { name: "LEANDER G.", position: "Web Developer" },
-          { name: "PHILIP A.", position: "Praktikant" },
+          {
+            name: "TARIK E.",
+            position: "Fullstack Developer",
+            tel: "MOBIL: + 49 1573 7532227",
+            mail: "MAIL: t.ermis@integr8.com",
+          },
+          {
+            name: "JAKOB S.",
+            position: "Fullstack Developer",
+            tel: "MOBIL: + 49 000 0000000",
+            mail: "MAIL: j.sawal@integr8.com",
+          },
+          {
+            name: "MARVIN K.",
+            position: "Web Developer",
+            tel: "MOBIL: + 49 175 8300179",
+            mail: "MAIL: m.kaddatz@integr8.com",
+          },
+          {
+            name: "LEANDER G.",
+            position: "Werkstudent",
+            tel: "MOBIL: + 49 176 45880980",
+            mail: "MAIL: l.gebhardt@integr8.com",
+          },
+          {
+            name: "PHILIP A.",
+            position: "Praktikant",
+            tel: "MOBIL: + 49 17684400475",
+            mail: "MAIL: p.athanas@integr8.com",
+          },
         ],
       },
       teamStrategy: {
-        CSO: [{ name: "FLORIS H.", position: "CSO" }],
-        Director: [{ name: "BLANCA R.", position: "Strategy Director" }],
+        CSO: [
+          {
+            name: "FLORIS H.",
+            position: "CSO",
+            tel: "MOBIL: +49 176 818923098",
+            mail: "MAIL: f.henning@integr8.com",
+          },
+        ],
+        Director: [
+          {
+            name: "BLANCA R.",
+            position: "Strategy Director",
+            tel: "MOBIL: + 49 0162 2409081",
+            mail: "MAIL: b.deramonrius@integr8.com",
+          },
+        ],
         StrategyTeam: [
-          { name: "DENIS H.", position: "Sr. Digital Strategist" },
-          { name: "SILJA M.", position: "Jr. Strategy" },
+          {
+            name: "DENIS H.",
+            position: "Sr. Digital Strategist",
+            tel: "MOBIL: + 49 176 844 00 475",
+            mail: "MAIL: d.hennes@integr8.com",
+          },
+          {
+            name: "SILJA M.",
+            position: "Jr. Strategy",
+            tel: "MOBIL: + 49 179 2125261",
+            mail: "MAIL: s.marquart@integr8.com",
+          },
         ],
       },
       teamCreative: {
-        LeadCreative: [{ name: "MARKUS H.", position: "Creative Director" }],
+        LeadCreative: [
+          {
+            name: "MARKUS H.",
+            position: "Creative Director",
+            tel: "MOBIL: + 49 171 8322964",
+            mail: "MAIL: m.haupt@integr8.com",
+          },
+        ],
         CreativeTeam: [
-          { name: "VIKTOR T.", position: "Motion Designer" },
-          { name: "ATAHAN Ö.", position: "Visual Designer" },
-          { name: "DIVYA K.", position: "Brand and Visual Designer" },
-          { name: "HANNA B.", position: "Visual Designer" },
-          { name: "KATHRIN M.", position: "Graphic Designer" },
+          {
+            name: "VIKTOR T.",
+            position: "Motion Designer",
+            tel: "MOBIL: + 49 17623508534",
+            mail: "MAIL: v.tittel@integr8.com",
+          },
+          {
+            name: "ATAHAN Ö.",
+            position: "Visual Designer",
+            tel: "MOBIL: + 49 000 0000000",
+            mail: "MAIL: a.oezbanazi@integr8.com",
+          },
+          {
+            name: "DIVYA K.",
+            position: "Brand and Visual Designer",
+            tel: "MOBIL: + 49 15170824036",
+            mail: "MAIL: d.kowshik@integr8.com",
+          },
+          {
+            name: "HANNA B.",
+            position: "Visual Designer",
+            tel: "MOBIL: + 49 172 4630611",
+            mail: "MAIL: h.biarozka@integr8.com",
+          },
+          {
+            name: "KATHRIN M.",
+            position: "Graphic Designer",
+            tel: "MOBIL: + 49 176 61240925",
+            mail: "MAIL: k.vanmeegen@integr8.com",
+          },
+          {
+            name: "AILEEN D.",
+            position: "Praktikantin",
+            tel: "MOBIL: + 49 157 34903736",
+            mail: "MAIL: s.dorn@integr8.com",
+          },
         ],
       },
       teamContent: {
-        LeadContent: [{ name: "HANNA B.", position: "Visual Designer" }],
-        ContentTeam: [{ name: " MELANIE K.", position: "Copywriter" }],
+        LeadContent: [
+          {
+            name: "HANNA S.",
+            position: "Head of Content",
+            tel: "MOBIL: + 49 176 61049408",
+            mail: "MAIL: h.scherber@integr8.com",
+          },
+        ],
+        ContentTeam: [
+          {
+            name: " MELANIE K.",
+            position: "Copywriter",
+            tel: "MOBIL: + 49 17680660936",
+            mail: "MAIL: m.krause@integr8.com",
+          },
+        ],
       },
       teamOperation: {
-        COO: [{ name: "SUSANNE A.", position: "COO" }],
+        COO: [
+          {
+            name: "SUSANNE A.",
+            position: "COO",
+            tel: "MOBIL: 0049 171 3180860",
+            mail: "MAIL: s.anspach@integr8.com",
+          },
+        ],
         OperationTeam: [
-          { name: "SARAH K.", position: "Sr. Account Manager" },
-          { name: "JANINA F.", position: "Fibu/Lohn BH, Personalberaterin" },
-          { name: "RITA V.", position: "Culture Managerin" },
+          {
+            name: "SARAH K.",
+            position: "Sr. Account Manager",
+            tel: "MOBIL: 0049 170 4818532",
+            mail: "MAIL: s.kollmann@integr8.com",
+          },
+          {
+            name: "JANINA F.",
+            position: "Fibu/Lohn BH, Personalberaterin",
+            tel: "MOBIL: 0049 176 97807902",
+            mail: "MAIL: j.protz@integr8.com",
+          },
+          {
+            name: "RITA V.",
+            position: "Culture Managerin",
+            tel: "MOBIL: + 49 176 41166622",
+            mail: "MAIL: r.valiukonyte@integr8.com",
+          },
         ],
       },
       teamMarketing: {
-        CMO: [{ name: "MICHAEL R.", position: "CMO" }],
+        CMO: [
+          {
+            name: "MICHAEL R.",
+            position: "CMO",
+            tel: "MOBIL: 0049 177 8219701",
+            mail: "MAIL: m.rutkowski@integr8.com",
+          },
+        ],
         MarketingTeam: [
-          { name: "FLORIAN P.", position: "Data Analyst" },
-          { name: "KRYSTYNA G.", position: "SEO Managerin" },
-          { name: "ROBERT P.", position: "Community Manager" },
-          { name: "SERDAR S.", position: "Sr. Performance Marketing Manager" },
-          { name: "TIM F.", position: "Marketing Strategist" },
+          {
+            name: "FLORIAN P.",
+            position: "Data Analyst",
+            tel: "MOBIL: 0049 1578 8881337",
+            mail: " MAIL: f.petereit@integr8.com",
+          },
+          {
+            name: "KRYSTYNA G.",
+            position: "SEO Managerin",
+            tel: "MOBIL: 0049 1575 0967761",
+            mail: "MAIL: k.grat@integr8.com",
+          },
+          {
+            name: "ROBERT P.",
+            position: "Community Manager",
+            tel: "MOBIL: 0049 176 20342084",
+            mail: "MAIL:  r.piotrowicz@integr8.com",
+          },
+          {
+            name: "SERDAR S.",
+            position: "Sr. Performance Marketing Manager",
+            tel: "MOBIL: 0049 172 4113348",
+            mail: "MAIL: s.saglam@integr8.com",
+          },
+          {
+            name: "TIM F.",
+            position: "Marketing Strategist",
+            tel: "MOBIL: 0172 5954655",
+            mail: "MAIL: t.franzke@integr8.com",
+          },
         ],
       },
-      nav: "Home",
     };
   },
 };

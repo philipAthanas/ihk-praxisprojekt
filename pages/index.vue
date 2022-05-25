@@ -1,7 +1,6 @@
 <template>
   <div>
     <HeroSection />
-    <BodyComponent />
   </div>
 </template>
 
