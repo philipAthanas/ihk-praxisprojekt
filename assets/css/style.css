@@ -140,29 +140,6 @@ h5 {
     "team8 team9 team10 team11 team12 team13"
 }
 
-.testArea {
-  
-  display: flex;
-  width: 100%;
-  padding: 5% 5%;
-
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  
-
-}
-
-.testBox {
-  background-color: aqua;
-  
-  text-align: center;
-
-}
-
-/*
-
-
 
 .singleGrid {
   display: flex;
@@ -176,7 +153,6 @@ h5 {
   width: 180px;
   height: auto;
 }
-*/
 
 .team1 {
   grid-area: team1;
