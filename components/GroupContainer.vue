@@ -4,7 +4,6 @@
     <div class="headIcon"
     v-if="headIcon" >
       <img :src="require('../grid-bilder/Ellipse 1.png')" fluid alt="Icon" />
-       
        </div>
       <div class="employee">
         <div v-for="item in people" v-bind:key="item.name">
@@ -20,9 +19,9 @@
             />
             <h5>{{ item.position }}</h5>
            </div>
-            <div v-if="nav !== 'Home' ">
+           <!-- <div v-if="nav != 'Home' ">
              <h5>{{ item.mail }}</h5>
-            </div>
+            </div> -->
         </div>
       </div>
     </div>

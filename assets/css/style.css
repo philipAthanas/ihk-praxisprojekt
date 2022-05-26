@@ -40,7 +40,6 @@ h5 {
 
 .box1 {
   background-color: rgb(255, 255, 255);
-
   grid-area: box1;
   margin-top: 0.5rem;
 }
@@ -64,47 +63,64 @@ h5 {
   letter-spacing: 0.01em;
 }
 
-.box2 {
+.box2_trennlinie {
   grid-area: box2;
-  margin-left: 2rem;
-  margin-bottom: 3.5rem;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
 }
 
-.box3 {
+.box3_dev {
   grid-area: box3;
   font-family: "ProximaNova-Bold";
   text-align: center;
   margin-right: 2.2rem;
+  
 }
 
-.box4 {
-  grid-area: box4;
+.square-border {
   font-family: "ProximaNova-Bold";
-  text-align: center;
+  cursor: pointer;
+  justify-content: center;
+
+}
+.square-border:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 10px rgba(0, 0, 0, .5);
+
+}
+
+.square-border:active {
+  transform: translateY(-1px); 
+
+}
+
+.box4_strategy {
+  grid-area: box4;
   margin-left: 1.7rem;
 }
 
-.box5 {
-  justify-content: center;
+.box5_creative {
   grid-area: box5;
   margin-right: 2.2rem;
+  
 }
 
-.box6 {
+.box6_operation {
   grid-area: box6;
-  justify-content: center;
   margin-right: 2.2rem;
+  
 }
 
-.box7 {
+.box7_marketing {
   grid-area: box7;
-  justify-content: center;
   margin-left: 1.7rem;
+  
 }
 
-.box8 {
+.box8_logo {
   grid-area: box8;
   margin-left: 5rem;
+  cursor: pointer;
 }
 
 /* BodyComponent */
@@ -121,18 +137,46 @@ h5 {
     "line1 line2 group36 group36 line8 line9"
     "line1 team5 team6 team7 line8 line9"
     "line1 line3 line4 line10 line8 line9"
-    "team8 team9 team10 team11 team12 team13";
+    "team8 team9 team10 team11 team12 team13"
 }
+
+.testArea {
+  
+  display: flex;
+  width: 100%;
+  padding: 5% 5%;
+
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  
+
+}
+
+.testBox {
+  background-color: aqua;
+  
+  text-align: center;
+
+}
+
+/*
+
+
 
 .singleGrid {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
+
 
 .singleGrid>div {
   width: 180px;
   height: auto;
 }
-
+*/
 
 .team1 {
   grid-area: team1;
@@ -257,7 +301,7 @@ h5 {
 }
 
 div[class^="team"] {
-  /* jedes div dessen Klasse mit "Team" beginnt wird angesprochen -- ^ = wenn die Klasse mit dem String anfängt*/
+  /* jedes div dessen Klasse mit "Team" beginnt wird angesprochen -- ^ = wenn die Klasse mit dem String anfängt */
   background-color: #fff;
   text-align: center;
   font-family: "ProximaNova-Bold" !important;

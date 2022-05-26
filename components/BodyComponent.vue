@@ -1,101 +1,101 @@
 <template>
   <div>
     <div class="body nav_home" v-if="nav === 'Home'">
-      <div class="team1">
+      <div class="team1" data-aos="zoom-in-right" data-aos-duration="1500">
         <GroupContainer
           :people="this.teamDev.CTO"
           :colorHeader="'#00eebb'"
           :headIcon="true"
         />
       </div>
-      <div class="team8">
+      <div class="team8" data-aos="fade-up" data-aos-duration="1500">
         <GroupContainer
           :people="this.teamDev.DevelopementTeam"
           :colorHeader="'#00eebb'"
         />
       </div>
-      <div class="team2">
+      <div class="team2" data-aos="zoom-in" data-aos-duration="1500">
         <GroupContainer
           :people="this.teamStrategy.CSO"
           :colorHeader="'#BD00FF'"
           :headIcon="true"
         />
       </div>
-      <div class="team5">
+      <div class="team5" data-aos="zoom-in" data-aos-duration="1500">
         <GroupContainer
           :people="this.teamStrategy.Director"
-          :colorHeader="'BD00FF'"
+          :colorHeader="'#BD00FF'"
           :headIcon="true"
         />
       </div>
-      <div class="team9">
+      <div class="team9" data-aos="fade-up" data-aos-duration="1500">
         <GroupContainer
           :people="this.teamStrategy.StrategyTeam"
           :colorHeader="'#BD00FF'"
         />
       </div>
-      <div class="team6">
+      <div class="team6" data-aos="zoom-in" data-aos-duration="1500">
         <GroupContainer
           :people="this.teamCreative.LeadCreative"
           :colorHeader="'#FF7A00'"
           :headIcon="true"
         />
       </div>
-      <div class="team10">
+      <div class="team10" data-aos="fade-up" data-aos-duration="1500">
         <GroupContainer
           :people="this.teamCreative.CreativeTeam"
           :colorHeader="'#FF7A00'"
         />
       </div>
-      <div class="team7">
+      <div class="team7" data-aos="zoom-in" data-aos-duration="1500">
         <GroupContainer
           :people="this.teamContent.LeadContent"
           :colorHeader="'#FF7A00'"
           :headIcon="true"
         />
       </div>
-      <div class="team11">
+      <div class="team11" data-aos="fade-up" data-aos-duration="1500">
         <GroupContainer
           :people="this.teamContent.ContentTeam"
           :colorHeader="'#FF7A00'"
         />
       </div>
-      <div class="team3">
+      <div class="team3" data-aos="zoom-in" data-aos-duration="1500">
         <GroupContainer
           :people="this.teamOperation.COO"
           :colorHeader="'#FF0000'"
           :headIcon="true"
         />
       </div>
-      <div class="team12">
+      <div class="team12" data-aos="fade-up" data-aos-duration="1500">
         <GroupContainer
           :people="this.teamOperation.OperationTeam"
           :colorHeader="'#FF0000'"
         />
       </div>
-      <div class="team4">
+      <div class="team4" data-aos="zoom-in-left" data-aos-duration="1500">
         <GroupContainer
           :people="this.teamMarketing.CMO"
           :colorHeader="'#0075FF'"
           :headIcon="true"
         />
       </div>
-      <div class="team13">
+      <div class="team13" data-aos="fade-up" data-aos-duration="1500">
         <GroupContainer
           :people="this.teamMarketing.MarketingTeam"
           :colorHeader="'#0075FF'"
         />
       </div>
-      <div class="line1">
+      <div class="line1" data-aos="zoom-in" data-aos-duration="1500">
         <img :src="require('../grid-bilder/Line 1.png')" fluid alt="Linie 1" />
       </div>
-      <div class="line2">
+      <div class="line2" data-aos="zoom-in" data-aos-duration="1500">
         <img :src="require('../grid-bilder/Line 2.png')" fluid alt="Linie 2" />
       </div>
-      <div class="line3">
+      <div class="line3" data-aos="zoom-in" data-aos-duration="1500">
         <img :src="require('../grid-bilder/Line 3.png')" fluid alt="Linie 3" />
       </div>
-      <div class="line4">
+      <div class="line4" data-aos="zoom-in" data-aos-duration="1500">
         <img :src="require('../grid-bilder/Line 4.png')" fluid alt="Linie 4" />
       </div>
       <!--
@@ -106,7 +106,7 @@
       <img :src="require('../grid-bilder/Line 6.png')" fluid alt="Linie 6" />
     </div>
     -->
-      <div class="group36">
+      <div class="group36" data-aos="zoom-in" data-aos-duration="1500">
         <img
           :src="require('../grid-bilder/Group 36.png')"
           fluid
@@ -114,21 +114,26 @@
         />
       </div>
 
-      <div class="line8">
+      <div class="line8" data-aos="zoom-in" data-aos-duration="1500">
         <img :src="require('../grid-bilder/Line 8.png')" fluid alt="Linie 8" />
       </div>
-      <div class="line9">
+      <div class="line9" data-aos="zoom-in" data-aos-duration="1500">
         <img :src="require('../grid-bilder/Line 9.png')" fluid alt="Linie 9" />
       </div>
-      <div class="line10">
+      <div class="line10" data-aos="zoom-in" data-aos-duration="1500">
         <img
           :src="require('../grid-bilder/Line 10.png')"
           fluid
           alt="Linie 10"
         />
       </div>
+
+      <div class="testArea">
+        <div class="nav_test"></div>
+      </div>
     </div>
 
+    <!--
     <div
       class="singleGrid"
       v-for="teamMember in [
@@ -145,6 +150,7 @@
         :nav="nav"
       />
     </div>
+   
     <div
       class="singleGrid"
       v-for="teamMember in [
@@ -157,7 +163,7 @@
     >
       <GroupContainer
         :people="[teamMember]"
-        :colorHeader="'#00eebb'"
+        :colorHeader="'#BD00FF'"
         :headIcon="true"
         :nav="nav"
       />
@@ -175,7 +181,7 @@
     >
       <GroupContainer
         :people="[teamMember]"
-        :colorHeader="'#00eebb'"
+        :colorHeader="'#FF7A00'"
         :headIcon="true"
         :nav="nav"
       />
@@ -191,7 +197,7 @@
     >
       <GroupContainer
         :people="[teamMember]"
-        :colorHeader="'#00eebb'"
+        :colorHeader="'#FF0000'"
         :headIcon="true"
         :nav="nav"
       />
@@ -207,11 +213,12 @@
     >
       <GroupContainer
         :people="[teamMember]"
-        :colorHeader="'#00eebb'"
+        :colorHeader="'#0075FF'"
         :headIcon="true"
         :nav="nav"
       />
     </div>
+    -->
   </div>
 </template>
 
@@ -227,7 +234,7 @@ export default {
           {
             name: "BAHAR J.",
             position: "CTO",
-            tel: "MOBIL: + 49 177 8237238",
+            tel: "MOBIL: 0177 8237238",
             mail: "MAIL: b.jawadi@integr8.com",
           },
         ],
@@ -235,31 +242,31 @@ export default {
           {
             name: "TARIK E.",
             position: "Fullstack Developer",
-            tel: "MOBIL: + 49 1573 7532227",
+            tel: "MOBIL: 01573 7532227",
             mail: "MAIL: t.ermis@integr8.com",
           },
           {
             name: "JAKOB S.",
             position: "Fullstack Developer",
-            tel: "MOBIL: + 49 000 0000000",
+            tel: "MOBIL: 0170 0000000",
             mail: "MAIL: j.sawal@integr8.com",
           },
           {
             name: "MARVIN K.",
             position: "Web Developer",
-            tel: "MOBIL: + 49 175 8300179",
+            tel: "MOBIL: 0175 8300179",
             mail: "MAIL: m.kaddatz@integr8.com",
           },
           {
             name: "LEANDER G.",
             position: "Werkstudent",
-            tel: "MOBIL: + 49 176 45880980",
+            tel: "MOBIL: 0176 45880980",
             mail: "MAIL: l.gebhardt@integr8.com",
           },
           {
             name: "PHILIP A.",
             position: "Praktikant",
-            tel: "MOBIL: + 49 17684400475",
+            tel: "MOBIL: 0176 84400475",
             mail: "MAIL: p.athanas@integr8.com",
           },
         ],
@@ -269,7 +276,7 @@ export default {
           {
             name: "FLORIS H.",
             position: "CSO",
-            tel: "MOBIL: +49 176 818923098",
+            tel: "MOBIL: 0176 818923098",
             mail: "MAIL: f.henning@integr8.com",
           },
         ],
@@ -277,7 +284,7 @@ export default {
           {
             name: "BLANCA R.",
             position: "Strategy Director",
-            tel: "MOBIL: + 49 0162 2409081",
+            tel: "MOBIL: 0162 2409081",
             mail: "MAIL: b.deramonrius@integr8.com",
           },
         ],
@@ -285,13 +292,13 @@ export default {
           {
             name: "DENIS H.",
             position: "Sr. Digital Strategist",
-            tel: "MOBIL: + 49 176 844 00 475",
+            tel: "MOBIL: 0170 00000000",
             mail: "MAIL: d.hennes@integr8.com",
           },
           {
             name: "SILJA M.",
             position: "Jr. Strategy",
-            tel: "MOBIL: + 49 179 2125261",
+            tel: "MOBIL: 0179 2125261",
             mail: "MAIL: s.marquart@integr8.com",
           },
         ],
@@ -301,7 +308,7 @@ export default {
           {
             name: "MARKUS H.",
             position: "Creative Director",
-            tel: "MOBIL: + 49 171 8322964",
+            tel: "MOBIL: 0171 8322964",
             mail: "MAIL: m.haupt@integr8.com",
           },
         ],
@@ -309,37 +316,37 @@ export default {
           {
             name: "VIKTOR T.",
             position: "Motion Designer",
-            tel: "MOBIL: + 49 17623508534",
+            tel: "MOBIL: 0176 23508534",
             mail: "MAIL: v.tittel@integr8.com",
           },
           {
             name: "ATAHAN Ö.",
             position: "Visual Designer",
-            tel: "MOBIL: + 49 000 0000000",
+            tel: "MOBIL: 0170 0000000",
             mail: "MAIL: a.oezbanazi@integr8.com",
           },
           {
             name: "DIVYA K.",
             position: "Brand and Visual Designer",
-            tel: "MOBIL: + 49 15170824036",
+            tel: "MOBIL: 0151 70824036",
             mail: "MAIL: d.kowshik@integr8.com",
           },
           {
             name: "HANNA B.",
             position: "Visual Designer",
-            tel: "MOBIL: + 49 172 4630611",
+            tel: "MOBIL: 0172 4630611",
             mail: "MAIL: h.biarozka@integr8.com",
           },
           {
             name: "KATHRIN M.",
             position: "Graphic Designer",
-            tel: "MOBIL: + 49 176 61240925",
+            tel: "MOBIL: 0176 61240925",
             mail: "MAIL: k.vanmeegen@integr8.com",
           },
           {
             name: "AILEEN D.",
             position: "Praktikantin",
-            tel: "MOBIL: + 49 157 34903736",
+            tel: "MOBIL: 0157 34903736",
             mail: "MAIL: s.dorn@integr8.com",
           },
         ],
@@ -349,7 +356,7 @@ export default {
           {
             name: "HANNA S.",
             position: "Head of Content",
-            tel: "MOBIL: + 49 176 61049408",
+            tel: "MOBIL: 0176 61049408",
             mail: "MAIL: h.scherber@integr8.com",
           },
         ],
@@ -357,7 +364,7 @@ export default {
           {
             name: " MELANIE K.",
             position: "Copywriter",
-            tel: "MOBIL: + 49 17680660936",
+            tel: "MOBIL: 0176 80660936",
             mail: "MAIL: m.krause@integr8.com",
           },
         ],
@@ -367,7 +374,7 @@ export default {
           {
             name: "SUSANNE A.",
             position: "COO",
-            tel: "MOBIL: 0049 171 3180860",
+            tel: "MOBIL: 0171 3180860",
             mail: "MAIL: s.anspach@integr8.com",
           },
         ],
@@ -375,19 +382,19 @@ export default {
           {
             name: "SARAH K.",
             position: "Sr. Account Manager",
-            tel: "MOBIL: 0049 170 4818532",
+            tel: "MOBIL: 0170 4818532",
             mail: "MAIL: s.kollmann@integr8.com",
           },
           {
             name: "JANINA F.",
             position: "Fibu/Lohn BH, Personalberaterin",
-            tel: "MOBIL: 0049 176 97807902",
+            tel: "MOBIL: 0176 97807902",
             mail: "MAIL: j.protz@integr8.com",
           },
           {
             name: "RITA V.",
             position: "Culture Managerin",
-            tel: "MOBIL: + 49 176 41166622",
+            tel: "MOBIL: 0176 41166622",
             mail: "MAIL: r.valiukonyte@integr8.com",
           },
         ],
@@ -397,7 +404,7 @@ export default {
           {
             name: "MICHAEL R.",
             position: "CMO",
-            tel: "MOBIL: 0049 177 8219701",
+            tel: "MOBIL: 0177 8219701",
             mail: "MAIL: m.rutkowski@integr8.com",
           },
         ],
@@ -405,25 +412,25 @@ export default {
           {
             name: "FLORIAN P.",
             position: "Data Analyst",
-            tel: "MOBIL: 0049 1578 8881337",
+            tel: "MOBIL: 01578 8881337",
             mail: " MAIL: f.petereit@integr8.com",
           },
           {
             name: "KRYSTYNA G.",
             position: "SEO Managerin",
-            tel: "MOBIL: 0049 1575 0967761",
+            tel: "MOBIL: 01575 0967761",
             mail: "MAIL: k.grat@integr8.com",
           },
           {
             name: "ROBERT P.",
             position: "Community Manager",
-            tel: "MOBIL: 0049 176 20342084",
+            tel: "MOBIL: 0176 20342084",
             mail: "MAIL:  r.piotrowicz@integr8.com",
           },
           {
             name: "SERDAR S.",
             position: "Sr. Performance Marketing Manager",
-            tel: "MOBIL: 0049 172 4113348",
+            tel: "MOBIL: 0172 4113348",
             mail: "MAIL: s.saglam@integr8.com",
           },
           {
