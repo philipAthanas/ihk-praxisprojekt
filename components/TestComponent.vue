@@ -2,7 +2,7 @@
   <div>
     <div class="testArea" v-if="nav !== 'Developement'">
       <div class="testBox 1" data-aos="flip-down">
-        <div class="employeeHeadIcon">
+        <div class="card_sub_content">
           <img
             :src="require('../grid-bilder/Ellipse 1.png')"
             fluid
@@ -26,7 +26,7 @@
 
       <div class="testBox 2" data-aos="flip-down">
         <div class="farbe"></div>
-        <div class="employeeHeadIcon_2">
+        <div class="card_sub_content_2">
           <img
             :src="require('../grid-bilder/Ellipse 1.png')"
             fluid
@@ -48,7 +48,7 @@
 
       <div class="testBox 3" data-aos="flip-down">
         <div class="farbe"></div>
-        <div class="employeeHeadIcon_2">
+        <div class="card_sub_content_2">
           <img
             :src="require('../grid-bilder/Ellipse 1.png')"
             fluid
@@ -70,7 +70,7 @@
 
       <div class="testBox 4" data-aos="flip-down">
         <div class="farbe"></div>
-        <div class="employeeHeadIcon_2">
+        <div class="card_sub_content_2">
           <img
             :src="require('../grid-bilder/Ellipse 1.png')"
             fluid
@@ -92,7 +92,7 @@
 
       <div class="testBox 5" data-aos="flip-down">
         <div class="farbe"></div>
-        <div class="employeeHeadIcon_2">
+        <div class="card_sub_content_2">
           <img
             :src="require('../grid-bilder/Ellipse 1.png')"
             fluid
@@ -114,7 +114,7 @@
 
       <div class="testBox 6" data-aos="flip-down">
         <div class="farbe"></div>
-        <div class="employeeHeadIcon_2">
+        <div class="card_sub_content_2">
           <img
             :src="require('../grid-bilder/Ellipse 1.png')"
             fluid
@@ -136,7 +136,7 @@
 
       <div class="testBox 7" data-aos="flip-down">
         <div class="farbe"></div>
-        <div class="employeeHeadIcon_2">
+        <div class="card_sub_content_2">
           <img
             :src="require('../grid-bilder/Ellipse 1.png')"
             fluid
@@ -418,12 +418,6 @@ export default {
   margin: auto 0;
 }
 
-.employeeHeadIcon {
-  position: relative;
-  top: 6rem;
-  left: 1rem;
-}
-
 .employeeName {
   position: relative;
   top: 6rem;
@@ -469,10 +463,6 @@ export default {
   width: auto;
   height: 12px;
   justify-items: start;
-}
-
-.employeeHeadIcon_2 {
-  padding: 5% 5%;
 }
 
 .NameMitarbeiter {

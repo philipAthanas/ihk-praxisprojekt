@@ -144,7 +144,7 @@
 
     <div class="unit" v-if="nav === 'Developement'">
       <div
-        class="singleGrid"
+        class="card_Parent"
         v-for="teamMember in [
           ...this.teamDev.CTO,
           ...this.teamDev.DevelopementTeam,
@@ -159,9 +159,9 @@
         />
       </div>
     </div>
-    <div v-if="nav === 'Strategy'">
+    <div class="unit" v-if="nav === 'Strategy'">
       <div
-        class="singleGrid"
+        class="card_Parent"
         v-for="teamMember in [
           ...this.teamStrategy.CSO,
           ...this.teamStrategy.Director,
@@ -177,9 +177,9 @@
         />
       </div>
     </div>
-    <div v-if="nav === 'Creative'">
+    <div class="unit" v-if="nav === 'Creative'">
       <div
-        class="singleGrid"
+        class="card_Parent"
         v-for="teamMember in [
           ...this.teamCreative.LeadCreative,
           ...this.teamCreative.CreativeTeam,
@@ -196,9 +196,9 @@
         />
       </div>
     </div>
-    <div v-if="nav === 'Operation'">
+    <div class="unit" v-if="nav === 'Operation'">
       <div
-        class="singleGrid"
+        class="card_Parent"
         v-for="teamMember in [
           ...this.teamOperation.COO,
           ...this.teamOperation.OperationTeam,
@@ -213,9 +213,9 @@
         />
       </div>
     </div>
-    <div v-if="nav === 'Marketing'">
+    <div class="unit" v-if="nav === 'Marketing'">
       <div
-        class="singleGrid"
+        class="card_Parent"
         v-for="teamMember in [
           ...this.teamMarketing.CMO,
           ...this.teamMarketing.MarketingTeam,
