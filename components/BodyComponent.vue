@@ -6,12 +6,14 @@
           :people="this.teamDev.CTO"
           :colorHeader="'#00eebb'"
           :headIcon="true"
+          :nav="nav"
         />
       </div>
       <div class="team8" data-aos="fade-up" data-aos-duration="1500">
         <GroupContainer
           :people="this.teamDev.DevelopementTeam"
           :colorHeader="'#00eebb'"
+          :nav="nav"
         />
       </div>
       <div class="team2" data-aos="zoom-in" data-aos-duration="1500">
@@ -19,6 +21,7 @@
           :people="this.teamStrategy.CSO"
           :colorHeader="'#BD00FF'"
           :headIcon="true"
+          :nav="nav"
         />
       </div>
       <div class="team5" data-aos="zoom-in" data-aos-duration="1500">
@@ -26,12 +29,14 @@
           :people="this.teamStrategy.Director"
           :colorHeader="'#BD00FF'"
           :headIcon="true"
+          :nav="nav"
         />
       </div>
       <div class="team9" data-aos="fade-up" data-aos-duration="1500">
         <GroupContainer
           :people="this.teamStrategy.StrategyTeam"
           :colorHeader="'#BD00FF'"
+          :nav="nav"
         />
       </div>
       <div class="team6" data-aos="zoom-in" data-aos-duration="1500">
@@ -39,12 +44,14 @@
           :people="this.teamCreative.LeadCreative"
           :colorHeader="'#FF7A00'"
           :headIcon="true"
+          :nav="nav"
         />
       </div>
       <div class="team10" data-aos="fade-up" data-aos-duration="1500">
         <GroupContainer
           :people="this.teamCreative.CreativeTeam"
           :colorHeader="'#FF7A00'"
+          :nav="nav"
         />
       </div>
       <div class="team7" data-aos="zoom-in" data-aos-duration="1500">
@@ -52,12 +59,14 @@
           :people="this.teamContent.LeadContent"
           :colorHeader="'#FF7A00'"
           :headIcon="true"
+          :nav="nav"
         />
       </div>
       <div class="team11" data-aos="fade-up" data-aos-duration="1500">
         <GroupContainer
           :people="this.teamContent.ContentTeam"
           :colorHeader="'#FF7A00'"
+          :nav="nav"
         />
       </div>
       <div class="team3" data-aos="zoom-in" data-aos-duration="1500">
@@ -65,12 +74,14 @@
           :people="this.teamOperation.COO"
           :colorHeader="'#FF0000'"
           :headIcon="true"
+          :nav="nav"
         />
       </div>
       <div class="team12" data-aos="fade-up" data-aos-duration="1500">
         <GroupContainer
           :people="this.teamOperation.OperationTeam"
           :colorHeader="'#FF0000'"
+          :nav="nav"
         />
       </div>
       <div class="team4" data-aos="zoom-in-left" data-aos-duration="1500">
@@ -78,12 +89,14 @@
           :people="this.teamMarketing.CMO"
           :colorHeader="'#0075FF'"
           :headIcon="true"
+          :nav="nav"
         />
       </div>
       <div class="team13" data-aos="fade-up" data-aos-duration="1500">
         <GroupContainer
           :people="this.teamMarketing.MarketingTeam"
           :colorHeader="'#0075FF'"
+          :nav="nav"
         />
       </div>
       <div class="line1" data-aos="zoom-in" data-aos-duration="1500">
@@ -127,98 +140,96 @@
           alt="Linie 10"
         />
       </div>
+    </div>
 
-      <div class="testArea">
-        <div class="nav_test"></div>
+    <div class="unit" v-if="nav === 'Developement'">
+      <div
+        class="singleGrid"
+        v-for="teamMember in [
+          ...this.teamDev.CTO,
+          ...this.teamDev.DevelopementTeam,
+        ]"
+        v-bind:key="teamMember.name"
+      >
+        <GroupContainer
+          :people="[teamMember]"
+          :colorHeader="'#00eebb'"
+          :headIcon="true"
+          :nav="nav"
+        />
       </div>
     </div>
-
-    <!--
-    <div
-      class="singleGrid"
-      v-for="teamMember in [
-        ...this.teamDev.CTO,
-        ...this.teamDev.DevelopementTeam,
-      ]"
-      v-bind:key="teamMember.name"
-      v-if="nav === 'Developement'"
-    >
-      <GroupContainer
-        :people="[teamMember]"
-        :colorHeader="'#00eebb'"
-        :headIcon="true"
-        :nav="nav"
-      />
+    <div v-if="nav === 'Strategy'">
+      <div
+        class="singleGrid"
+        v-for="teamMember in [
+          ...this.teamStrategy.CSO,
+          ...this.teamStrategy.Director,
+          ...this.teamStrategy.StrategyTeam,
+        ]"
+        v-bind:key="teamMember.name"
+      >
+        <GroupContainer
+          :people="[teamMember]"
+          :colorHeader="'#BD00FF'"
+          :headIcon="true"
+          :nav="nav"
+        />
+      </div>
     </div>
-   
-    <div
-      class="singleGrid"
-      v-for="teamMember in [
-        ...this.teamStrategy.CSO,
-        ...this.teamStrategy.Director,
-        ...this.teamStrategy.StrategyTeam,
-      ]"
-      v-bind:key="teamMember.name"
-      v-if="nav === 'Strategy'"
-    >
-      <GroupContainer
-        :people="[teamMember]"
-        :colorHeader="'#BD00FF'"
-        :headIcon="true"
-        :nav="nav"
-      />
+    <div v-if="nav === 'Creative'">
+      <div
+        class="singleGrid"
+        v-for="teamMember in [
+          ...this.teamCreative.LeadCreative,
+          ...this.teamCreative.CreativeTeam,
+          ...this.teamContent.LeadContent,
+          ...this.teamContent.ContentTeam,
+        ]"
+        v-bind:key="teamMember.name"
+      >
+        <GroupContainer
+          :people="[teamMember]"
+          :colorHeader="'#FF7A00'"
+          :headIcon="true"
+          :nav="nav"
+        />
+      </div>
     </div>
-    <div
-      class="singleGrid"
-      v-for="teamMember in [
-        ...this.teamCreative.LeadCreative,
-        ...this.teamCreative.CreativeTeam,
-        ...this.teamContent.LeadContent,
-        ...this.teamContent.ContentTeam,
-      ]"
-      v-bind:key="teamMember.name"
-      v-if="nav === 'Creative'"
-    >
-      <GroupContainer
-        :people="[teamMember]"
-        :colorHeader="'#FF7A00'"
-        :headIcon="true"
-        :nav="nav"
-      />
+    <div v-if="nav === 'Operation'">
+      <div
+        class="singleGrid"
+        v-for="teamMember in [
+          ...this.teamOperation.COO,
+          ...this.teamOperation.OperationTeam,
+        ]"
+        v-bind:key="teamMember.name"
+      >
+        <GroupContainer
+          :people="[teamMember]"
+          :colorHeader="'#FF0000'"
+          :headIcon="true"
+          :nav="nav"
+        />
+      </div>
     </div>
-    <div
-      class="singleGrid"
-      v-for="teamMember in [
-        ...this.teamOperation.COO,
-        ...this.teamOperation.OperationTeam,
-      ]"
-      v-bind:key="teamMember.name"
-      v-if="nav === 'Operation'"
-    >
-      <GroupContainer
-        :people="[teamMember]"
-        :colorHeader="'#FF0000'"
-        :headIcon="true"
-        :nav="nav"
-      />
+    <div v-if="nav === 'Marketing'">
+      <div
+        class="singleGrid"
+        v-for="teamMember in [
+          ...this.teamMarketing.CMO,
+          ...this.teamMarketing.MarketingTeam,
+        ]"
+        v-bind:key="teamMember.name"
+      >
+        <GroupContainer
+          :people="[teamMember]"
+          :colorHeader="'#0075FF'"
+          :headIcon="true"
+          :nav="nav"
+        />
+      </div>
     </div>
-    <div
-      class="singleGrid"
-      v-for="teamMember in [
-        ...this.teamMarketing.CMO,
-        ...this.teamMarketing.MarketingTeam,
-      ]"
-      v-bind:key="teamMember.name"
-      v-if="nav === 'Marketing'"
-    >
-      <GroupContainer
-        :people="[teamMember]"
-        :colorHeader="'#0075FF'"
-        :headIcon="true"
-        :nav="nav"
-      />
-    </div>
-    -->
   </div>
 </template>
 

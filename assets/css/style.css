@@ -149,11 +149,6 @@ h5 {
 }
 
 
-.singleGrid>div {
-  width: 180px;
-  height: auto;
-}
-
 .team1 {
   grid-area: team1;
 }
@@ -287,6 +282,82 @@ div[class^="team"] {
 
 .star {
   margin-right: 5px;
+}
+
+
+.unit {
+  display: inline-flex;
+  width: 100%;
+  padding: 1% 1%;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+
+  background-color: rgb(229, 229, 229);
+}
+
+.unit>div {
+  margin: 2%;
+}
+
+.testBox {
+  border: solid 2px;
+  width: fit-content;
+  height: 320px;
+  background-color: white;
+
+  border-color: black;
+  position: relative;
+}
+
+.flexbox_2 {
+    display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-family: "ProximaNova-Bold";
+     
+}
+
+.content {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+}
+
+.employeeHeadIcon_2 {
+  padding: 5% 5%;
+}
+
+.NameMitarbeiter {
+  
+  top: 14%;
+  left: 25%;
+  font-family: "ProximaNova-Bold";
+  font-size: 25px;
+  line-height: 40px;
+}
+
+
+
+
+.employeeDescription_2 {
+  
+  top: 42%;
+  left: 25%;
+  right: 5%;
+  font-family: "ProximaNova-Bold";
+  color: black;
+  font-size: 16px;
+}
+
+.employeeContakt_2 {
+
+  top: 75%;
+  left: 25%;
+  font-family: "ProximaNova-Bold";
+  color: black;
+  font-size: 18px;
 }
 
 /* .icon {

@@ -92,7 +92,6 @@
     </div>
     <BodyComponent :nav="this.nav" />
     <!-- nach dem : Variable in Anführungszeichen der Value -->
-    <TestComponent :nav="this.nav" />
   </div>
 </template>
 

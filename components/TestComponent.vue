@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="testArea" v-if="nav === 'Developement'">
+    <div class="testArea" v-if="nav !== 'Developement'">
       <div class="testBox 1" data-aos="flip-down">
         <div class="employeeHeadIcon">
           <img
