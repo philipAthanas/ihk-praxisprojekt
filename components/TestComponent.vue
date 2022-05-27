@@ -1,23 +1,21 @@
 <template>
   <div>
-    <div class="testArea" v-if="nav === 'Home'">
-      <div class="testBox 1">
-        <div>
-          <div class="employeeHeadIcon">
-            <img
-              :src="require('../grid-bilder/Ellipse 1.png')"
-              fluid
-              alt="Icon"
-            />
-            <div v-for="item in people" v-bind:key="item.name">
-              <h3>{{ item.name }}</h3>
-              <h3 class="employeeName">{{ item.name }}</h3>
-            </div>
+    <div class="testArea" v-if="nav === 'Developement'">
+      <div class="testBox 1" data-aos="flip-down">
+        <div class="employeeHeadIcon">
+          <img
+            :src="require('../grid-bilder/Ellipse 1.png')"
+            fluid
+            alt="Icon"
+          />
+          <div v-for="item in people" v-bind:key="item.name">
+            <h3 class="employeeName">{{ item.name }}</h3>
           </div>
         </div>
         <GroupContainer :people="this.teamDev.CTO" :colorHeader="'#00eebb'" />
         <div h5 class="employeeDescription">
           Lorem ipsum dolor sit amet, consectetur adipiscing del, eiusmod tempor
+          <br />
           incididunt ut labore et dolore magna.
         </div>
         <div h5 class="employeeContakt">
@@ -26,14 +24,136 @@
         </div>
       </div>
 
-      <div class="testBox 2">
-        <h1>2</h1>
+      <div class="testBox 2" data-aos="flip-down">
+        <div class="farbe"></div>
+        <div class="employeeHeadIcon_2">
+          <img
+            :src="require('../grid-bilder/Ellipse 1.png')"
+            fluid
+            alt="Icon"
+          />
+          <div h3 class="NameMitarbeiter">Name MA</div>
+          <div h4 class="PositionMitarbeiter">Position</div>
+        </div>
+        <div h5 class="employeeDescription_2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing del, eiusmod tempor
+          <br />
+          incididunt ut labore et dolore magna.
+        </div>
+        <div h5 class="employeeContakt_2">
+          <span>MOBILE: 0176 0000000</span><br />
+          <span>MAIL: b.jawadi@integr8.com</span>
+        </div>
       </div>
-      <div class="testBox 3">
-        <h1>3</h1>
+
+      <div class="testBox 3" data-aos="flip-down">
+        <div class="farbe"></div>
+        <div class="employeeHeadIcon_2">
+          <img
+            :src="require('../grid-bilder/Ellipse 1.png')"
+            fluid
+            alt="Icon"
+          />
+          <div h3 class="NameMitarbeiter">Name MA</div>
+          <div h4 class="PositionMitarbeiter">Position</div>
+        </div>
+        <div h5 class="employeeDescription_2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing del, eiusmod tempor
+          <br />
+          incididunt ut labore et dolore magna.
+        </div>
+        <div h5 class="employeeContakt_2">
+          <span>MOBILE: 0176 0000000</span><br />
+          <span>MAIL: b.jawadi@integr8.com</span>
+        </div>
       </div>
-      <div class="testBox 4">
-        <h1>4</h1>
+
+      <div class="testBox 4" data-aos="flip-down">
+        <div class="farbe"></div>
+        <div class="employeeHeadIcon_2">
+          <img
+            :src="require('../grid-bilder/Ellipse 1.png')"
+            fluid
+            alt="Icon"
+          />
+          <div h3 class="NameMitarbeiter">Name MA</div>
+          <div h4 class="PositionMitarbeiter">Position</div>
+        </div>
+        <div h5 class="employeeDescription_2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing del, eiusmod tempor
+          <br />
+          incididunt ut labore et dolore magna.
+        </div>
+        <div h5 class="employeeContakt_2">
+          <span>MOBILE: 0176 0000000</span><br />
+          <span>MAIL: b.jawadi@integr8.com</span>
+        </div>
+      </div>
+
+      <div class="testBox 5" data-aos="flip-down">
+        <div class="farbe"></div>
+        <div class="employeeHeadIcon_2">
+          <img
+            :src="require('../grid-bilder/Ellipse 1.png')"
+            fluid
+            alt="Icon"
+          />
+          <div h3 class="NameMitarbeiter">Name MA</div>
+          <div h4 class="PositionMitarbeiter">Position</div>
+        </div>
+        <div h5 class="employeeDescription_2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing del, eiusmod tempor
+          <br />
+          incididunt ut labore et dolore magna.
+        </div>
+        <div h5 class="employeeContakt_2">
+          <span>MOBILE: 0176 0000000</span><br />
+          <span>MAIL: b.jawadi@integr8.com</span>
+        </div>
+      </div>
+
+      <div class="testBox 6" data-aos="flip-down">
+        <div class="farbe"></div>
+        <div class="employeeHeadIcon_2">
+          <img
+            :src="require('../grid-bilder/Ellipse 1.png')"
+            fluid
+            alt="Icon"
+          />
+          <div h3 class="NameMitarbeiter">Name MA</div>
+          <div h4 class="PositionMitarbeiter">Position</div>
+        </div>
+        <div h5 class="employeeDescription_2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing del, eiusmod tempor
+          <br />
+          incididunt ut labore et dolore magna.
+        </div>
+        <div h5 class="employeeContakt_2">
+          <span>MOBILE: 0176 0000000</span><br />
+          <span>MAIL: b.jawadi@integr8.com</span>
+        </div>
+      </div>
+
+      <div class="testBox 7" data-aos="flip-down">
+        <div class="farbe"></div>
+        <div class="employeeHeadIcon_2">
+          <img
+            :src="require('../grid-bilder/Ellipse 1.png')"
+            fluid
+            alt="Icon"
+          />
+          <div h3 class="NameMitarbeiter">Name MA</div>
+          <div h4 class="PositionMitarbeiter">Position</div>
+        </div>
+        <div h5 class="employeeDescription_2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing del, eiusmod tempor
+          <br />
+          incididunt ut labore et dolore magna.
+        </div>
+        <div h5 class="employeeContakt_2">
+          <span>MOBILE: 0176 0000000</span><br />
+          <span>MAIL: b.jawadi@integr8.com</span>
+        </div>
       </div>
     </div>
   </div>
@@ -271,14 +391,19 @@ export default {
 
 <style scoped>
 .testArea {
-  border: solid 2px;
-  display: flex;
+  display: inline-flex;
   width: 100%;
-  padding: 5% 5%;
+  padding: 1% 1%;
 
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+
+  background-color: rgb(229, 229, 229);
+}
+
+.testArea > div {
+  margin: 2%;
 }
 
 .testBox1 {
@@ -287,24 +412,22 @@ export default {
   padding: 7% 7%;
 }
 
-.employeeDetail {
-}
-
 .TeamColor {
   width: 100%;
   height: 10px;
-  position: relative;
-  top: -5rem;
+  margin: auto 0;
 }
 
 .employeeHeadIcon {
   position: relative;
   top: 6rem;
+  left: 1rem;
 }
 
 .employeeName {
-  justify-content: left;
-  right: 6rem;
+  position: relative;
+  top: 6rem;
+  left: 1rem;
 }
 
 .employeePosition {
@@ -315,13 +438,78 @@ export default {
   color: rgba(0, 0, 0, 1);
   font-size: 16px;
   letter-spacing: 1%;
+
+  position: relative;
+  left: 1rem;
 }
 
 .employeeContakt {
   font-family: "ProximaNova-Bold";
-  padding: 10px;
+
+  position: relative;
+  top: 1rem;
+  left: 1rem;
 }
 
 .star {
+}
+
+.testBox {
+  width: 500px;
+  height: 320px;
+  background-color: white;
+
+  border-color: black;
+  position: relative;
+}
+
+.farbe {
+  border: solid #00eebb;
+  background-color: #00eebb;
+  width: auto;
+  height: 12px;
+  justify-items: start;
+}
+
+.employeeHeadIcon_2 {
+  padding: 5% 5%;
+}
+
+.NameMitarbeiter {
+  position: absolute;
+  top: 14%;
+  left: 25%;
+  font-family: "ProximaNova-Bold";
+  font-size: 25px;
+  line-height: 40px;
+}
+
+.PositionMitarbeiter {
+  position: absolute;
+  top: 24%;
+  left: 25%;
+  font-family: "ProximaNova-Bold";
+  color: #9b9b9b;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.employeeDescription_2 {
+  position: absolute;
+  top: 42%;
+  left: 25%;
+  right: 5%;
+  font-family: "ProximaNova-Bold";
+  color: black;
+  font-size: 16px;
+}
+
+.employeeContakt_2 {
+  position: absolute;
+  top: 75%;
+  left: 25%;
+  font-family: "ProximaNova-Bold";
+  color: black;
+  font-size: 18px;
 }
 </style>
