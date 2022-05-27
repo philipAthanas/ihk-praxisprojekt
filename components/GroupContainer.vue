@@ -49,9 +49,9 @@
             tempo incididunt ut labore et dolore magna.
           </div>
           <br />
-          <div>
-            <h5>{{ people[0].tel }}</h5>
-            <span>{{ people[0].mail }}</span>
+          <div class="employeeContact">
+            <p>{{ people[0].tel }}</p>
+            <p>{{ people[0].mail }}</p>
           </div>
         </div>
       </div>
