@@ -65,31 +65,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.employee {
-  padding: 50px 50px 0px 50px;
-}
-
-.TeamColor {
-  width: 100%;
-  height: 10px;
-  align-self: flex-start;
-}
-
-.flexbox {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-family: "ProximaNova-Bold";
-  margin-bottom: 50px;
-}
-
-.headIcon {
-  position: absolute;
-  top: -32px;
-  left: 0;
-  right: 0;
-  z-index: 1;
-}
-</style>
+<style scoped></style>

@@ -369,3 +369,65 @@ div[class^="team"] {
 
 }
 */
+/*
+TeamBox
+*/
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.square-border {
+  display: flex;
+  background: #fff;
+  border: 1px solid #000000;
+  padding: 22px;
+  text-align: center;
+  align-items: center;
+}
+
+h4 {
+  margin: 0px;
+  margin-left: 15px;
+  text-transform: uppercase;
+  font-family: 'ProximaNova-Bold';
+  font-style: bold;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: Center;
+  Vertical-align: Top;
+  Letter-spacing: -1%;
+}
+
+/*
+GroupContainer
+*/
+
+.employee {
+  padding: 50px 50px 0px 50px;
+}
+
+.TeamColor {
+  width: 100%;
+  height: 10px;
+  align-self: flex-start;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: "ProximaNova-Bold";
+  margin-bottom: 50px;
+}
+
+.headIcon {
+  position: absolute;
+  top: -32px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
