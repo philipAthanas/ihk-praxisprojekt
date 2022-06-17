@@ -124,7 +124,7 @@ h5 {
 }
 
 .nav_home {
-  grid-template-rows: 180px 180px 180px 180px max-content;
+  grid-template-rows: 180px 180px 180px 180px 180px max-content;
   grid-template-columns: repeat(6, 1fr);
   grid-template-areas:
     "team1 team2 . . team3 team4"
@@ -136,27 +136,31 @@ h5 {
 
 @media (max-width: 800px) {
   .nav_home {
-    grid-template-rows: 180px 180px 180px 180px 180px max-content;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 180px 20px max-content);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-areas:
-      "team1 team2 . . team3 team4"
-      "line1 line2 group36 group36 line8 line9"
-      "line1 team5 team6 team7 line8 line9"
-      "line1 line3 line4 line10 line8 line9"
-      "team8 team9 team10 team11 team12 team13";
+    "team1"
+    "lineNew1"
+    "team8"
+    "team2"
+    "team9"
+    ; 
   }
-}
 
-@media (max-width: 600px) {
-  .nav_home {
-    grid-template-rows: 180px 180px 180px 180px 180px max-content;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas:
-      "team1 team2 . . team3 team4"
-      "line1 line2 group36 group36 line8 line9"
-      "line1 team5 team6 team7 line8 line9"
-      "line1 line3 line4 line10 line8 line9"
-      "team8 team9 team10 team11 team12 team13";
+  .header {
+    grid-template-rows: repeat(9, 1fr);
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      "box1" 
+      "box2"
+        "." 
+        "box3" 
+        "box6"
+        "box4"
+        "box7"
+        "box8"
+        ".";
+    overflow: hidden;
   }
 }
 
@@ -216,6 +220,14 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
+}
+
+.lineNew1 {
+  background-image: url('../../grid-bilder/i8-logo.png');
+  background-size: contain;
+  grid-area: lineNew1;
+
 }
 
 .line2 {

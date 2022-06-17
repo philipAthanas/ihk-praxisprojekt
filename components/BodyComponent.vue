@@ -102,6 +102,7 @@
       <div class="line1" data-aos="zoom-in" data-aos-duration="1500">
         <img :src="require('../grid-bilder/Line 1.png')" fluid alt="Linie 1" />
       </div>
+      <div class="lineNew1" data-aos="zoom-in" data-aos-duration="1500"></div>
       <div class="line2" data-aos="zoom-in" data-aos-duration="1500">
         <img :src="require('../grid-bilder/Line 2.png')" fluid alt="Linie 2" />
       </div>
