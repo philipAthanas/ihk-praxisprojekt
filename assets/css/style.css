@@ -122,15 +122,42 @@ h5 {
   background-color: rgb(229, 229, 229);
   column-gap: 6rem;
 }
+
 .nav_home {
   grid-template-rows: 180px 180px 180px 180px max-content;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-areas:
     "team1 team2 . . team3 team4"
     "line1 line2 group36 group36 line8 line9"
     "line1 team5 team6 team7 line8 line9"
     "line1 line3 line4 line10 line8 line9"
     "team8 team9 team10 team11 team12 team13";
+}
+
+@media (max-width: 800px) {
+  .nav_home {
+    grid-template-rows: 180px 180px 180px 180px 180px max-content;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      "team1 team2 . . team3 team4"
+      "line1 line2 group36 group36 line8 line9"
+      "line1 team5 team6 team7 line8 line9"
+      "line1 line3 line4 line10 line8 line9"
+      "team8 team9 team10 team11 team12 team13";
+  }
+}
+
+@media (max-width: 600px) {
+  .nav_home {
+    grid-template-rows: 180px 180px 180px 180px 180px max-content;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      "team1 team2 . . team3 team4"
+      "line1 line2 group36 group36 line8 line9"
+      "line1 team5 team6 team7 line8 line9"
+      "line1 line3 line4 line10 line8 line9"
+      "team8 team9 team10 team11 team12 team13";
+  }
 }
 
 .team1 {
