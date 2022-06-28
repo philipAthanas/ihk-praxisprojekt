@@ -134,7 +134,7 @@ h5 {
     "team8 team9 team10 team11 team12 team13";
 }
 
-@media (max-width: 800px) {
+@media (max-width: 760px) {
   .nav_home {
     grid-template-rows: repeat(6, 180px 20px max-content);
     grid-template-columns: repeat(1, 1fr);
@@ -143,9 +143,67 @@ h5 {
     "lineNew1"
     "team8"
     "team2"
+    "lineNew2"
+    "team5"
+    "lineNew3"
     "team9"
+    "group36"
+    "team6"
+    "lineNew4"
+    "team10"
+    "team7"
+    "lineNew10"
+    "team11"
+    "team3"
+    "lineNew8"
+    "team12"
+    "team4"
+    "lineNew9"
+    "team13"
     ; 
   }
+
+@media(max-width: 760px) {
+  .team1[data-aos=zoom-in-right] {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@media(max-width: 760px) {
+  .lineNew1[data-aos=zoom-in] {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@media(max-width: 760px) {
+  .team8[data-aos=fade-up] {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@media(max-width: 760px) {
+  .team2[data-aos=zoom-in] {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@media(max-width: 760px) {
+  .lineNew2[data-aos=zoom-in] {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@media(max-width: 760px) {
+  .team5[data-aos=zoom-in] {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
 
   .header {
     grid-template-rows: repeat(9, 1fr);
@@ -153,7 +211,7 @@ h5 {
       grid-template-areas: 
       "box1" 
       "box2"
-        "." 
+        /* "."  */
         "box3" 
         "box6"
         "box4"
@@ -224,7 +282,7 @@ h5 {
 }
 
 .lineNew1 {
-  background-image: url('../../grid-bilder/i8-logo.png');
+  background-image: url('../../grid-bilder/Line-1.png');
   background-size: contain;
   grid-area: lineNew1;
 
@@ -237,6 +295,13 @@ h5 {
   align-items: center;
 }
 
+.lineNew2 {
+  background-image: url('../../grid-bilder/Line-2.png');
+  background-size: contain;
+  grid-area: lineNew2;
+
+}
+
 .line3 {
   grid-area: line3;
   display: flex;
@@ -244,11 +309,25 @@ h5 {
   align-items: center;
 }
 
+.lineNew3 {
+  background-image: url('../../grid-bilder/Line-3.png');
+  background-size: contain;
+  grid-area: lineNew3;
+
+}
+
 .line4 {
   grid-area: line4;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.lineNew4 {
+  background-image: url('../../grid-bilder/Line-4.png');
+  background-size: contain;
+  grid-area: lineNew4;
+
 }
 /*
 .line5 {
@@ -280,6 +359,13 @@ h5 {
   align-items: center;
 }
 
+.lineNew8 {
+  background-image: url('../../grid-bilder/Line-8.png');
+  background-size: contain;
+  grid-area: lineNew8;
+
+}
+
 .line9 {
   grid-area: line9;
   display: flex;
@@ -287,11 +373,25 @@ h5 {
   align-items: center;
 }
 
+.lineNew9 {
+  background-image: url('../../grid-bilder/Line-9.png');
+  background-size: contain;
+  grid-area: lineNew9;
+
+}
+
 .line10 {
   grid-area: line10;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.lineNew10 {
+  background-image: url('../../grid-bilder/Line-10.png');
+  background-size: contain;
+  grid-area: lineNew10;
+
 }
 
 div[class^="team"] {

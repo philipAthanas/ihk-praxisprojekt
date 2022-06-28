@@ -100,18 +100,21 @@
         />
       </div>
       <div class="line1" data-aos="zoom-in" data-aos-duration="1500">
-        <img :src="require('../grid-bilder/Line 1.png')" fluid alt="Linie 1" />
+        <img :src="require('../grid-bilder/Line-1.png')" fluid alt="Linie 1" />
       </div>
       <div class="lineNew1" data-aos="zoom-in" data-aos-duration="1500"></div>
       <div class="line2" data-aos="zoom-in" data-aos-duration="1500">
-        <img :src="require('../grid-bilder/Line 2.png')" fluid alt="Linie 2" />
+        <img :src="require('../grid-bilder/Line-2.png')" fluid alt="Linie 2" />
       </div>
+      <div class="lineNew2" data-aos="zoom-in" data-aos-duration="1500"></div>
       <div class="line3" data-aos="zoom-in" data-aos-duration="1500">
-        <img :src="require('../grid-bilder/Line 3.png')" fluid alt="Linie 3" />
+        <img :src="require('../grid-bilder/Line-3.png')" fluid alt="Linie 3" />
       </div>
+      <div class="lineNew3" data-aos="zoom-in" data-aos-duration="1500"></div>
       <div class="line4" data-aos="zoom-in" data-aos-duration="1500">
-        <img :src="require('../grid-bilder/Line 4.png')" fluid alt="Linie 4" />
+        <img :src="require('../grid-bilder/Line-4.png')" fluid alt="Linie 4" />
       </div>
+      <div class="lineNew4" data-aos="zoom-in" data-aos-duration="1500"></div>
       <!--
     <div class="line5">
       <img :src="require('../grid-bilder/Line 5.png')" fluid alt="Linie 5" />
@@ -129,18 +132,21 @@
       </div>
 
       <div class="line8" data-aos="zoom-in" data-aos-duration="1500">
-        <img :src="require('../grid-bilder/Line 8.png')" fluid alt="Linie 8" />
+        <img :src="require('../grid-bilder/Line-8.png')" fluid alt="Linie 8" />
       </div>
+      <div class="lineNew8" data-aos="zoom-in" data-aos-duration="1500"></div>
       <div class="line9" data-aos="zoom-in" data-aos-duration="1500">
-        <img :src="require('../grid-bilder/Line 9.png')" fluid alt="Linie 9" />
+        <img :src="require('../grid-bilder/Line-9.png')" fluid alt="Linie 9" />
       </div>
+      <div class="lineNew9" data-aos="zoom-in" data-aos-duration="1500"></div>
       <div class="line10" data-aos="zoom-in" data-aos-duration="1500">
         <img
-          :src="require('../grid-bilder/Line 10.png')"
+          :src="require('../grid-bilder/Line-10.png')"
           fluid
           alt="Linie 10"
         />
       </div>
+      <div class="lineNew10" data-aos="zoom-in" data-aos-duration="1500"></div>
     </div>
 
     <div class="unit" v-if="nav === 'Developement'">

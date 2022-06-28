@@ -25,7 +25,7 @@
       >
         <img
           class="trenlinie"
-          :src="require('../grid-bilder/Line 11.png')"
+          :src="require('../grid-bilder/Line-11.png')"
           fluid
           alt="png mit Trennlinie"
         />
