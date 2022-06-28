@@ -1,5 +1,5 @@
 <template>
-  <fragment>
+  <div>
     <div class="TeamColor" :style="{ backgroundColor: colorHeader }"></div>
     <div v-if="nav === 'Home'">
       <div class="headIcon" v-if="headIcon">
@@ -56,7 +56,7 @@
         </div>
       </div>
     </div>
-  </fragment>
+  </div>
 </template>
 
 <script>
