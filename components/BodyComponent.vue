@@ -403,15 +403,9 @@
 export default {
   props: ["nav"],
   css: ["~/assets/css/style.css"],
-  created() {
-    if (window.innerWidth <= 760) {
-      console.log("Disable FadeIns");
-      this.renderWithFadeIns = false;
-    }
-  },
   data() {
     return {
-      renderWithFadeIns: false,
+      renderWithFadeIns: true,
       teamDev: {
         CTO: [
           {
@@ -625,6 +619,12 @@ export default {
         ],
       },
     };
+  },
+  created() {
+    if (window.innerWidth <= 760) {
+      console.log("Disable FadeIns");
+      this.renderWithFadeIns = false;
+    }
   },
 };
 </script>
