@@ -104,15 +104,20 @@ export default {
   data() {
     return {
       nav: "Home",
-      renderWithFadeIns: false,
+      renderWithFadeIns: true,
     };
+  },
+  created() {
+    if (window.innerWidth <= 760) {
+      console.log("Disable FadeIns");
+      this.renderWithFadeIns = false;
+    }
   },
   methods: {
     goto(setNav) {
       this.nav = setNav;
       var element = this.$refs["div1"];
       var top = element.offsetTop;
-
       window.scrollTo(0, top);
     },
   },

@@ -165,21 +165,29 @@
         />
       </div>
       <div
-        class="line1"
+        class="line1 hideOnMobile"
         :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
         data-aos-duration="1500"
+        v-show="!renderWithFadeIns"
       >
-        <img :src="require('../grid-bilder/Line-1.png')" fluid alt="Linie 1" />
+        <div class="kreise"></div>
+        <div class="strich"></div>
+        <div class="kreise"></div>
       </div>
       <div
         class="lineNew1"
         :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
         data-aos-duration="1500"
-      ></div>
+      >
+        <div class="kreise"></div>
+        <div class="strich"></div>
+        <div class="kreise"></div>
+      </div>
       <div
-        class="line2"
+        class="line2 hideOnMobile"
         :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
         data-aos-duration="1500"
+        v-show="!renderWithFadeIns"
       >
         <img :src="require('../grid-bilder/Line-2.png')" fluid alt="Linie 2" />
       </div>
@@ -187,11 +195,16 @@
         class="lineNew2"
         :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
         data-aos-duration="1500"
-      ></div>
+      >
+        <div class="kreise"></div>
+        <div class="strich"></div>
+        <div class="kreise"></div>
+      </div>
       <div
-        class="line3"
+        class="line3 hideOnMobile"
         :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
         data-aos-duration="1500"
+        v-show="!renderWithFadeIns"
       >
         <img :src="require('../grid-bilder/Line-3.png')" fluid alt="Linie 3" />
       </div>
@@ -199,11 +212,16 @@
         class="lineNew3"
         :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
         data-aos-duration="1500"
-      ></div>
+      >
+        <div class="kreise"></div>
+        <div class="strich"></div>
+        <div class="kreise"></div>
+      </div>
       <div
-        class="line4"
+        class="line4 hideOnMobile"
         :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
         data-aos-duration="1500"
+        v-show="!renderWithFadeIns"
       >
         <img :src="require('../grid-bilder/Line-4.png')" fluid alt="Linie 4" />
       </div>
@@ -211,19 +229,16 @@
         class="lineNew4"
         :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
         data-aos-duration="1500"
-      ></div>
-      <!--
-    <div class="line5">
-      <img :src="require('../grid-bilder/Line 5.png')" fluid alt="Linie 5" />
-    </div>
-    <div class="line6">
-      <img :src="require('../grid-bilder/Line 6.png')" fluid alt="Linie 6" />
-    </div>
-    -->
+      >
+        <div class="kreise"></div>
+        <div class="strich"></div>
+        <div class="kreise"></div>
+      </div>
       <div
-        class="group36"
+        class="group36 hideOnMobile"
         :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
         data-aos-duration="1500"
+        v-show="!renderWithFadeIns"
       >
         <img
           :src="require('../grid-bilder/Group 36.png')"
@@ -233,9 +248,10 @@
       </div>
 
       <div
-        class="line8"
+        class="line8 hideOnMobile"
         :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
         data-aos-duration="1500"
+        v-show="!renderWithFadeIns"
       >
         <img :src="require('../grid-bilder/Line-8.png')" fluid alt="Linie 8" />
       </div>
@@ -243,11 +259,16 @@
         class="lineNew8"
         :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
         data-aos-duration="1500"
-      ></div>
+      >
+        <div class="kreise"></div>
+        <div class="strich"></div>
+        <div class="kreise"></div>
+      </div>
       <div
-        class="line9"
+        class="line9 hideOnMobile"
         :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
         data-aos-duration="1500"
+        v-show="!renderWithFadeIns"
       >
         <img :src="require('../grid-bilder/Line-9.png')" fluid alt="Linie 9" />
       </div>
@@ -255,11 +276,16 @@
         class="lineNew9"
         :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
         data-aos-duration="1500"
-      ></div>
+      >
+        <div class="kreise"></div>
+        <div class="strich"></div>
+        <div class="kreise"></div>
+      </div>
       <div
-        class="line10"
+        class="line10 hideOnMobile"
         :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
         data-aos-duration="1500"
+        v-show="!renderWithFadeIns"
       >
         <img
           :src="require('../grid-bilder/Line-10.png')"
@@ -271,7 +297,11 @@
         class="lineNew10"
         :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
         data-aos-duration="1500"
-      ></div>
+      >
+        <div class="kreise"></div>
+        <div class="strich"></div>
+        <div class="kreise"></div>
+      </div>
     </div>
     <div class="unit" v-if="nav === 'Developement'">
       <div
@@ -373,6 +403,12 @@
 export default {
   props: ["nav"],
   css: ["~/assets/css/style.css"],
+  created() {
+    if (window.innerWidth <= 760) {
+      console.log("Disable FadeIns");
+      this.renderWithFadeIns = false;
+    }
+  },
   data() {
     return {
       renderWithFadeIns: false,
