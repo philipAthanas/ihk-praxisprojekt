@@ -12,6 +12,11 @@ body {
   scroll-behavior: smooth;
 }
 
+.card_Content p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
 @font-face {
   font-family: "ProximaNova-Bold";
   src: local("ProximaNova-Bold"),
@@ -325,7 +330,9 @@ div[class^="line"] {
 }
 
 .unit {
-  display: inline-flex;
+  /* display: inline-flex; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   padding: 10% 7%;
   flex-direction: row;
@@ -335,7 +342,7 @@ div[class^="line"] {
 }
 .card_Parent {
   flex: 1;
-  margin: 0 2% 2% 0;
+  margin: 0 30px 30px 0;
 }
 
 .card_Content {
@@ -525,6 +532,9 @@ GroupContainer
   .body div[class^="group"] {
     grid-area: unset;
     display: none;
+  }
+  .unit {
+    display: inline-flex;
   }
   .card_Parent {
     margin: 0 0 60px 0;

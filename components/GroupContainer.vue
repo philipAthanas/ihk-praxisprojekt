@@ -47,15 +47,18 @@
             />
             <h5>{{ people[0].position }}</h5>
           </div>
-          <br />
-          <div>
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing del, eiusmod
             tempo incididunt ut labore et dolore magna.
-          </div>
-          <br />
+          </p>
           <div class="employeeContact">
             <p>{{ people[0].tel }}</p>
-            <p>{{ people[0].mail }}</p>
+            <div class="mail_container">
+              <p>MAIL:</p>
+              <a :href="`mailto:${people[0].mail}`">
+                <p>{{ people[0].mail }}</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -69,4 +72,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.mail_container {
+  display: flex;
+  flex-direction: row;
+}
+</style>
