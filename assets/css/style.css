@@ -36,7 +36,6 @@ body {
     "box1 box2 box3 box4  box8"
     "box1 box2 box6 box7 ."
     "box1 box2 box5 . .";
-
   color: rgba(0, 0, 0, 1);
   text-align: left;
   grid-gap: 20px;
@@ -140,89 +139,6 @@ body {
     "line1 team5 team6 team7 line8 line9"
     "line1 line3 line4 line10 line8 line9"
     "team8 team9 team10 team11 team12 team13";
-}
-
-@media (max-width: 760px) {
-  .nav_home {
-    grid-template-rows: repeat(6, 180px 20px max-content);
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-areas:
-      "team1"
-      "lineNew1"
-      "team8"
-      "team2"
-      "lineNew2"
-      "team5"
-      "lineNew3"
-      "team9"
-      "group36"
-      "team6"
-      "lineNew4"
-      "team10"
-      "team7"
-      "lineNew10"
-      "team11"
-      "team3"
-      "lineNew8"
-      "team12"
-      "team4"
-      "lineNew9"
-      "team13";
-  }
-
-  .team1[data-aos="zoom-in-right"] {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-
-  .lineNew1[data-aos="zoom-in"] {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-
-  .team8[data-aos="fade-up"] {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-
-  .team2[data-aos="zoom-in"] {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-
-  .lineNew2[data-aos="zoom-in"] {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-
-  .team5[data-aos="zoom-in"] {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-
-  .header {
-    grid-template-rows: 1fr repeat(6, 120px);
-    grid-template-columns: auto;
-    grid-template-areas:
-      "box1"
-      "box3"
-      "box6"
-      "box4"
-      "box7"
-      "box5";
-    grid-gap: 0;
-  }
-  .header .box {
-    margin-right: 0;
-  }
-  .box7_marketing,
-  .box4_strategy {
-    margin-left: 0;
-  }
-  .i8-text p {
-    font-size: 16px;
-    line-height: 18px;
-  }
 }
 
 .team1 {
@@ -547,4 +463,111 @@ GroupContainer
   left: 0;
   right: 0;
   z-index: 1;
+}
+
+@media (max-width: 760px) {
+  .nav_home {
+    grid-template-rows: repeat(13, auto);
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "team1"
+      /* "lineNew1" */
+      "team8"
+      "team2"
+      /* "lineNew2" */
+      "team5"
+      /* "lineNew3" */
+      "team9"
+      /* "group36" */
+      "team6"
+      /* "lineNew4" */
+      "team10"
+      "team7"
+      /* "lineNew10" */
+      "team11"
+      "team3"
+      /* "lineNew8" */
+      "team12"
+      "team4"
+      /* "lineNew9" */
+      "team13";
+    grid-gap: 60px;
+    padding: 20% 7%;
+  }
+
+  /* .team1[data-aos="zoom-in-right"] {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .lineNew1[data-aos="zoom-in"] {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .team8[data-aos="fade-up"] {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .team2[data-aos="zoom-in"] {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .lineNew2[data-aos="zoom-in"] {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .team5[data-aos="zoom-in"] {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  } */
+
+  .header {
+    grid-template-rows: repeat(8, auto);
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "box1"
+      "box3"
+      "box6"
+      "box4"
+      "box7"
+      "box5"
+      "box8";
+    grid-gap: 0;
+  }
+  .header .box {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .square-border {
+    padding: 5px 0;
+  }
+  .box8_logo {
+    margin-left: 0;
+    text-align: center;
+  }
+  .box2_trennlinie,
+  .body div[class^="line"],
+  .body div[class^="group"] {
+    grid-area: unset;
+    display: none;
+  }
+  .card_Parent {
+    margin: 0 0 60px 0;
+  }
+  .header .box:empty,
+  .head_icon_child {
+    display: none;
+  }
+  .box7_marketing,
+  .box4_strategy {
+    margin-left: 0;
+  }
+  .i8-text p {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }

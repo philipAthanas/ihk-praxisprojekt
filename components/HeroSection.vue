@@ -15,7 +15,6 @@
           </p>
         </span>
       </div>
-
       <div
         class="box box2_trennlinie"
         data-aos="zoom-in-up"
@@ -75,7 +74,6 @@
       >
         <TeamBox :teamName="'Marketing'" :colorCircle="'#0075FF'" />
       </div>
-
       <div
         class="box box8_logo"
         @click="nav = 'Home'"
