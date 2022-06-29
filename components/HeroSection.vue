@@ -1,7 +1,11 @@
 <template>
   <div>
     <div class="header">
-      <div class="box box1" data-aos="fade-right" data-aos-duration="1000">
+      <div
+        class="box box1"
+        :data-aos="this.renderWithFadeIns ? 'fade-right' : ''"
+        data-aos-duration="1000"
+      >
         <span class="titel">WIR SIND INTEGR8.</span><br />
         <span class="i8-text"
           ><p>
@@ -17,7 +21,7 @@
       </div>
       <div
         class="box box2_trennlinie"
-        data-aos="zoom-in-up"
+        :data-aos="this.renderWithFadeIns ? 'zoom-in-up' : ''"
         data-aos-easing="ease-in-back"
         data-aos-delay="400"
         data-aos-offset="-100"
@@ -32,8 +36,8 @@
       <div
         btn
         class="box box3_dev"
-        @click="nav = 'Developement'"
-        data-aos="flip-down"
+        @click="goto('Developement')"
+        :data-aos="this.renderWithFadeIns ? 'flip-down' : ''"
         data-aos-duration="1000"
       >
         <TeamBox :teamName="'Developement'" :colorCircle="'#00EEBB'" />
@@ -41,8 +45,8 @@
       <div
         btn
         class="box box4_strategy"
-        @click="nav = 'Operation'"
-        data-aos="flip-down"
+        @click="goto('Operation')"
+        :data-aos="this.renderWithFadeIns ? 'flip-down' : ''"
         data-aos-duration="1000"
       >
         <TeamBox :teamName="'Operation'" :colorCircle="'#FF0000'" />
@@ -50,8 +54,8 @@
       <div
         btn
         class="box box5_creative"
-        @click="nav = 'Creative'"
-        data-aos="flip-down"
+        @click="goto('Creative')"
+        :data-aos="this.renderWithFadeIns ? 'flip-down' : ''"
         data-aos-duration="1000"
       >
         <TeamBox :teamName="'Creative'" :colorCircle="'#FF7A00'" />
@@ -59,8 +63,8 @@
       <div
         btn
         class="box box6_operation"
-        @click="nav = 'Strategy'"
-        data-aos="flip-down"
+        @click="goto('Strategy')"
+        :data-aos="this.renderWithFadeIns ? 'flip-down' : ''"
         data-aos-duration="1000"
       >
         <TeamBox :teamName="'Strategy'" :colorCircle="'#BD00FF'" />
@@ -68,8 +72,8 @@
       <div
         btn
         class="box box7_marketing"
-        @click="nav = 'Marketing'"
-        data-aos="flip-down"
+        @click="goto('Marketing')"
+        :data-aos="this.renderWithFadeIns ? 'flip-down' : ''"
         data-aos-duration="1000"
       >
         <TeamBox :teamName="'Marketing'" :colorCircle="'#0075FF'" />
@@ -77,7 +81,7 @@
       <div
         class="box box8_logo"
         @click="nav = 'Home'"
-        data-aos="fade-left"
+        :data-aos="this.renderWithFadeIns ? 'fade-left' : ''"
         data-aos-duration="1000"
       >
         <img
@@ -88,6 +92,7 @@
         />
       </div>
     </div>
+    <div ref="div1"></div>
     <BodyComponent :nav="this.nav" />
     <!-- nach dem : Variable in Anführungszeichen der Value -->
   </div>
@@ -96,11 +101,20 @@
 <script>
 export default {
   css: ["~/assets/css/style.css"],
-
   data() {
     return {
       nav: "Home",
+      renderWithFadeIns: false,
     };
+  },
+  methods: {
+    goto(setNav) {
+      this.nav = setNav;
+      var element = this.$refs["div1"];
+      var top = element.offsetTop;
+
+      window.scrollTo(0, top);
+    },
   },
 };
 </script>

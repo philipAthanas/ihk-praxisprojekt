@@ -1,120 +1,217 @@
 <template>
   <div>
     <div class="body nav_home" v-if="nav === 'Home'">
-      <div class="team1" data-aos="zoom-in-right" data-aos-duration="1500">
+      <div
+        class="team1"
+        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
+        data-aos-duration="1500"
+      >
         <GroupContainer
           :people="this.teamDev.CTO"
           :colorHeader="'#00eebb'"
           :headIcon="true"
           :nav="nav"
+          :renderWithFadeIns="renderWithFadeIns"
         />
       </div>
-      <div class="team8" data-aos="fade-up" data-aos-duration="1500">
+      <div
+        class="team8"
+        :data-aos="renderWithFadeIns ? 'fade-up' : ''"
+        data-aos-duration="1500"
+      >
         <GroupContainer
           :people="this.teamDev.DevelopementTeam"
           :colorHeader="'#00eebb'"
           :nav="nav"
+          :renderWithFadeIns="renderWithFadeIns"
         />
       </div>
-      <div class="team2" data-aos="zoom-in" data-aos-duration="1500">
+      <div
+        class="team2"
+        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
+        data-aos-duration="1500"
+      >
         <GroupContainer
           :people="this.teamStrategy.CSO"
           :colorHeader="'#BD00FF'"
           :headIcon="true"
           :nav="nav"
+          :renderWithFadeIns="renderWithFadeIns"
         />
       </div>
-      <div class="team5" data-aos="zoom-in" data-aos-duration="1500">
+      <div
+        class="team5"
+        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
+        data-aos-duration="1500"
+      >
         <GroupContainer
           :people="this.teamStrategy.Director"
           :colorHeader="'#BD00FF'"
           :headIcon="true"
           :nav="nav"
+          :renderWithFadeIns="renderWithFadeIns"
         />
       </div>
-      <div class="team9" data-aos="fade-up" data-aos-duration="1500">
+      <div
+        class="team9"
+        :data-aos="renderWithFadeIns ? 'fade-up' : ''"
+        data-aos-duration="1500"
+      >
         <GroupContainer
           :people="this.teamStrategy.StrategyTeam"
           :colorHeader="'#BD00FF'"
           :nav="nav"
+          :renderWithFadeIns="renderWithFadeIns"
         />
       </div>
-      <div class="team6" data-aos="zoom-in" data-aos-duration="1500">
+      <div
+        class="team6"
+        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
+        data-aos-duration="1500"
+      >
         <GroupContainer
           :people="this.teamCreative.LeadCreative"
           :colorHeader="'#FF7A00'"
           :headIcon="true"
           :nav="nav"
+          :renderWithFadeIns="renderWithFadeIns"
         />
       </div>
-      <div class="team10" data-aos="fade-up" data-aos-duration="1500">
+      <div
+        class="team10"
+        :data-aos="renderWithFadeIns ? 'fade-up' : ''"
+        data-aos-duration="1500"
+      >
         <GroupContainer
           :people="this.teamCreative.CreativeTeam"
           :colorHeader="'#FF7A00'"
           :nav="nav"
+          :renderWithFadeIns="renderWithFadeIns"
         />
       </div>
-      <div class="team7" data-aos="zoom-in" data-aos-duration="1500">
+      <div
+        class="team7"
+        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
+        data-aos-duration="1500"
+      >
         <GroupContainer
           :people="this.teamContent.LeadContent"
           :colorHeader="'#FF7A00'"
           :headIcon="true"
           :nav="nav"
+          :renderWithFadeIns="renderWithFadeIns"
         />
       </div>
-      <div class="team11" data-aos="fade-up" data-aos-duration="1500">
+      <div
+        class="team11"
+        :data-aos="renderWithFadeIns ? 'fade-up' : ''"
+        data-aos-duration="1500"
+      >
         <GroupContainer
           :people="this.teamContent.ContentTeam"
           :colorHeader="'#FF7A00'"
           :nav="nav"
+          :renderWithFadeIns="renderWithFadeIns"
         />
       </div>
-      <div class="team3" data-aos="zoom-in" data-aos-duration="1500">
+      <div
+        class="team3"
+        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
+        data-aos-duration="1500"
+      >
         <GroupContainer
           :people="this.teamOperation.COO"
           :colorHeader="'#FF0000'"
           :headIcon="true"
           :nav="nav"
+          :renderWithFadeIns="renderWithFadeIns"
         />
       </div>
-      <div class="team12" data-aos="fade-up" data-aos-duration="1500">
+      <div
+        class="team12"
+        :data-aos="renderWithFadeIns ? 'fade-up' : ''"
+        data-aos-duration="1500"
+      >
         <GroupContainer
           :people="this.teamOperation.OperationTeam"
           :colorHeader="'#FF0000'"
           :nav="nav"
+          :renderWithFadeIns="renderWithFadeIns"
         />
       </div>
-      <div class="team4" data-aos="zoom-in-left" data-aos-duration="1500">
+      <div
+        class="team4"
+        :data-aos="renderWithFadeIns ? 'zoom-in-left' : ''"
+        data-aos-duration="1500"
+      >
         <GroupContainer
           :people="this.teamMarketing.CMO"
           :colorHeader="'#0075FF'"
           :headIcon="true"
           :nav="nav"
+          :renderWithFadeIns="renderWithFadeIns"
         />
       </div>
-      <div class="team13" data-aos="fade-up" data-aos-duration="1500">
+      <div
+        class="team13"
+        :data-aos="renderWithFadeIns ? 'fade-up' : ''"
+        data-aos-duration="1500"
+      >
         <GroupContainer
           :people="this.teamMarketing.MarketingTeam"
           :colorHeader="'#0075FF'"
           :nav="nav"
+          :renderWithFadeIns="renderWithFadeIns"
         />
       </div>
-      <div class="line1" data-aos="zoom-in" data-aos-duration="1500">
+      <div
+        class="line1"
+        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
+        data-aos-duration="1500"
+      >
         <img :src="require('../grid-bilder/Line-1.png')" fluid alt="Linie 1" />
       </div>
-      <div class="lineNew1" data-aos="zoom-in" data-aos-duration="1500"></div>
-      <div class="line2" data-aos="zoom-in" data-aos-duration="1500">
+      <div
+        class="lineNew1"
+        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
+        data-aos-duration="1500"
+      ></div>
+      <div
+        class="line2"
+        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
+        data-aos-duration="1500"
+      >
         <img :src="require('../grid-bilder/Line-2.png')" fluid alt="Linie 2" />
       </div>
-      <div class="lineNew2" data-aos="zoom-in" data-aos-duration="1500"></div>
-      <div class="line3" data-aos="zoom-in" data-aos-duration="1500">
+      <div
+        class="lineNew2"
+        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
+        data-aos-duration="1500"
+      ></div>
+      <div
+        class="line3"
+        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
+        data-aos-duration="1500"
+      >
         <img :src="require('../grid-bilder/Line-3.png')" fluid alt="Linie 3" />
       </div>
-      <div class="lineNew3" data-aos="zoom-in" data-aos-duration="1500"></div>
-      <div class="line4" data-aos="zoom-in" data-aos-duration="1500">
+      <div
+        class="lineNew3"
+        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
+        data-aos-duration="1500"
+      ></div>
+      <div
+        class="line4"
+        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
+        data-aos-duration="1500"
+      >
         <img :src="require('../grid-bilder/Line-4.png')" fluid alt="Linie 4" />
       </div>
-      <div class="lineNew4" data-aos="zoom-in" data-aos-duration="1500"></div>
+      <div
+        class="lineNew4"
+        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
+        data-aos-duration="1500"
+      ></div>
       <!--
     <div class="line5">
       <img :src="require('../grid-bilder/Line 5.png')" fluid alt="Linie 5" />
@@ -123,7 +220,11 @@
       <img :src="require('../grid-bilder/Line 6.png')" fluid alt="Linie 6" />
     </div>
     -->
-      <div class="group36" data-aos="zoom-in" data-aos-duration="1500">
+      <div
+        class="group36"
+        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
+        data-aos-duration="1500"
+      >
         <img
           :src="require('../grid-bilder/Group 36.png')"
           fluid
@@ -131,24 +232,47 @@
         />
       </div>
 
-      <div class="line8" data-aos="zoom-in" data-aos-duration="1500">
+      <div
+        class="line8"
+        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
+        data-aos-duration="1500"
+      >
         <img :src="require('../grid-bilder/Line-8.png')" fluid alt="Linie 8" />
       </div>
-      <div class="lineNew8" data-aos="zoom-in" data-aos-duration="1500"></div>
-      <div class="line9" data-aos="zoom-in" data-aos-duration="1500">
+      <div
+        class="lineNew8"
+        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
+        data-aos-duration="1500"
+      ></div>
+      <div
+        class="line9"
+        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
+        data-aos-duration="1500"
+      >
         <img :src="require('../grid-bilder/Line-9.png')" fluid alt="Linie 9" />
       </div>
-      <div class="lineNew9" data-aos="zoom-in" data-aos-duration="1500"></div>
-      <div class="line10" data-aos="zoom-in" data-aos-duration="1500">
+      <div
+        class="lineNew9"
+        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
+        data-aos-duration="1500"
+      ></div>
+      <div
+        class="line10"
+        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
+        data-aos-duration="1500"
+      >
         <img
           :src="require('../grid-bilder/Line-10.png')"
           fluid
           alt="Linie 10"
         />
       </div>
-      <div class="lineNew10" data-aos="zoom-in" data-aos-duration="1500"></div>
+      <div
+        class="lineNew10"
+        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
+        data-aos-duration="1500"
+      ></div>
     </div>
-
     <div class="unit" v-if="nav === 'Developement'">
       <div
         class="card_Parent"
@@ -163,6 +287,7 @@
           :colorHeader="'#00eebb'"
           :headIcon="true"
           :nav="nav"
+          :renderWithFadeIns="renderWithFadeIns"
         />
       </div>
     </div>
@@ -181,6 +306,7 @@
           :colorHeader="'#BD00FF'"
           :headIcon="true"
           :nav="nav"
+          :renderWithFadeIns="renderWithFadeIns"
         />
       </div>
     </div>
@@ -200,6 +326,7 @@
           :colorHeader="'#FF7A00'"
           :headIcon="true"
           :nav="nav"
+          :renderWithFadeIns="renderWithFadeIns"
         />
       </div>
     </div>
@@ -217,6 +344,7 @@
           :colorHeader="'#FF0000'"
           :headIcon="true"
           :nav="nav"
+          :renderWithFadeIns="renderWithFadeIns"
         />
       </div>
     </div>
@@ -234,6 +362,7 @@
           :colorHeader="'#0075FF'"
           :headIcon="true"
           :nav="nav"
+          :renderWithFadeIns="renderWithFadeIns"
         />
       </div>
     </div>
@@ -246,7 +375,7 @@ export default {
   css: ["~/assets/css/style.css"],
   data() {
     return {
-      title: "Name",
+      renderWithFadeIns: false,
       teamDev: {
         CTO: [
           {

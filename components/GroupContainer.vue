@@ -23,7 +23,11 @@
         </div>
       </div>
     </div>
-    <div class="card_Content" data-aos="flip-down" v-else>
+    <div
+      class="card_Content"
+      :data-aos="renderWithFadeIns ? 'flip-down' : ''"
+      v-else
+    >
       <div class="card_sub_content">
         <img
           :src="require('../grid-bilder/Ellipse 1.png')"
@@ -61,7 +65,7 @@
 
 <script>
 export default {
-  props: ["people", "colorHeader", "headIcon", "nav"],
+  props: ["people", "colorHeader", "headIcon", "nav", "renderWithFadeIns"],
 };
 </script>
 
