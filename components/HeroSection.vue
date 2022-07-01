@@ -93,7 +93,11 @@
       </div>
     </div>
     <div ref="div1"></div>
-    <BodyComponent :nav="this.nav" />
+    <BodyComponent
+      :nav="this.nav"
+      :selectedMember="this.selectedMember"
+      @teamClickedFromBodyComponent="teamClicked"
+    />
     <!-- nach dem : Variable in Anführungszeichen der Value -->
   </div>
 </template>
@@ -105,6 +109,7 @@ export default {
     return {
       nav: "Home",
       renderWithFadeIns: true,
+      selectedMember: null,
     };
   },
   created() {
@@ -119,6 +124,11 @@ export default {
       var element = this.$refs["div1"];
       var top = element.offsetTop;
       window.scrollTo(0, top);
+    },
+    teamClicked(team) {
+      // console.log(team);
+      this.nav = team[0];
+      this.selectedMember = team[1];
     },
   },
 };

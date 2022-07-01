@@ -8,10 +8,12 @@
       >
         <GroupContainer
           :people="this.teamDev.CTO"
-          :colorHeader="'#00eebb'"
           :headIcon="true"
           :nav="nav"
           :renderWithFadeIns="renderWithFadeIns"
+          colorHeader="#00eebb"
+          team="Developement"
+          @teamClicked="teamClicked"
         />
       </div>
       <div
@@ -21,9 +23,12 @@
       >
         <GroupContainer
           :people="this.teamDev.DevelopementTeam"
-          :colorHeader="'#00eebb'"
           :nav="nav"
           :renderWithFadeIns="renderWithFadeIns"
+          colorHeader="#00eebb"
+          team="Developement"
+          @teamClicked="teamClicked"
+          :selectedMember="selectedMember"
         />
       </div>
       <div
@@ -37,6 +42,8 @@
           :headIcon="true"
           :nav="nav"
           :renderWithFadeIns="renderWithFadeIns"
+          team="Strategy"
+          @teamClicked="teamClicked"
         />
       </div>
       <div
@@ -50,6 +57,8 @@
           :headIcon="true"
           :nav="nav"
           :renderWithFadeIns="renderWithFadeIns"
+          team="Strategy"
+          @teamClicked="teamClicked"
         />
       </div>
       <div
@@ -62,6 +71,8 @@
           :colorHeader="'#BD00FF'"
           :nav="nav"
           :renderWithFadeIns="renderWithFadeIns"
+          team="Strategy"
+          @teamClicked="teamClicked"
         />
       </div>
       <div
@@ -75,6 +86,8 @@
           :headIcon="true"
           :nav="nav"
           :renderWithFadeIns="renderWithFadeIns"
+          team="Creative"
+          @teamClicked="teamClicked"
         />
       </div>
       <div
@@ -87,6 +100,8 @@
           :colorHeader="'#FF7A00'"
           :nav="nav"
           :renderWithFadeIns="renderWithFadeIns"
+          team="Creative"
+          @teamClicked="teamClicked"
         />
       </div>
       <div
@@ -100,6 +115,8 @@
           :headIcon="true"
           :nav="nav"
           :renderWithFadeIns="renderWithFadeIns"
+          team="Content"
+          @teamClicked="teamClicked"
         />
       </div>
       <div
@@ -112,6 +129,8 @@
           :colorHeader="'#FF7A00'"
           :nav="nav"
           :renderWithFadeIns="renderWithFadeIns"
+          team="Content"
+          @teamClicked="teamClicked"
         />
       </div>
       <div
@@ -125,6 +144,8 @@
           :headIcon="true"
           :nav="nav"
           :renderWithFadeIns="renderWithFadeIns"
+          team="Operation"
+          @teamClicked="teamClicked"
         />
       </div>
       <div
@@ -137,6 +158,8 @@
           :colorHeader="'#FF0000'"
           :nav="nav"
           :renderWithFadeIns="renderWithFadeIns"
+          team="Operation"
+          @teamClicked="teamClicked"
         />
       </div>
       <div
@@ -150,6 +173,8 @@
           :headIcon="true"
           :nav="nav"
           :renderWithFadeIns="renderWithFadeIns"
+          team="Marketing"
+          @teamClicked="teamClicked"
         />
       </div>
       <div
@@ -162,20 +187,12 @@
           :colorHeader="'#0075FF'"
           :nav="nav"
           :renderWithFadeIns="renderWithFadeIns"
+          team="Marketing"
+          @teamClicked="teamClicked"
         />
       </div>
       <div
-        class="line1 hideOnMobile"
-        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
-        data-aos-duration="1500"
-        v-show="!renderWithFadeIns"
-      >
-        <div class="kreise"></div>
-        <div class="strich"></div>
-        <div class="kreise"></div>
-      </div>
-      <div
-        class="lineNew1"
+        class="line1"
         :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
         data-aos-duration="1500"
       >
@@ -184,15 +201,7 @@
         <div class="kreise"></div>
       </div>
       <div
-        class="line2 hideOnMobile"
-        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
-        data-aos-duration="1500"
-        v-show="!renderWithFadeIns"
-      >
-        <img :src="require('../grid-bilder/Line-2.png')" fluid alt="Linie 2" />
-      </div>
-      <div
-        class="lineNew2"
+        class="line2"
         :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
         data-aos-duration="1500"
       >
@@ -201,15 +210,7 @@
         <div class="kreise"></div>
       </div>
       <div
-        class="line3 hideOnMobile"
-        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
-        data-aos-duration="1500"
-        v-show="!renderWithFadeIns"
-      >
-        <img :src="require('../grid-bilder/Line-3.png')" fluid alt="Linie 3" />
-      </div>
-      <div
-        class="lineNew3"
+        class="line3"
         :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
         data-aos-duration="1500"
       >
@@ -218,15 +219,7 @@
         <div class="kreise"></div>
       </div>
       <div
-        class="line4 hideOnMobile"
-        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
-        data-aos-duration="1500"
-        v-show="!renderWithFadeIns"
-      >
-        <img :src="require('../grid-bilder/Line-4.png')" fluid alt="Linie 4" />
-      </div>
-      <div
-        class="lineNew4"
+        class="line4"
         :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
         data-aos-duration="1500"
       >
@@ -235,28 +228,7 @@
         <div class="kreise"></div>
       </div>
       <div
-        class="group36 hideOnMobile"
-        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
-        data-aos-duration="1500"
-        v-show="!renderWithFadeIns"
-      >
-        <img
-          :src="require('../grid-bilder/Group 36.png')"
-          fluid
-          alt="Group 36"
-        />
-      </div>
-
-      <div
-        class="line8 hideOnMobile"
-        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
-        data-aos-duration="1500"
-        v-show="!renderWithFadeIns"
-      >
-        <img :src="require('../grid-bilder/Line-8.png')" fluid alt="Linie 8" />
-      </div>
-      <div
-        class="lineNew8"
+        class="line5"
         :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
         data-aos-duration="1500"
       >
@@ -265,15 +237,7 @@
         <div class="kreise"></div>
       </div>
       <div
-        class="line9 hideOnMobile"
-        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
-        data-aos-duration="1500"
-        v-show="!renderWithFadeIns"
-      >
-        <img :src="require('../grid-bilder/Line-9.png')" fluid alt="Linie 9" />
-      </div>
-      <div
-        class="lineNew9"
+        class="line6"
         :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
         data-aos-duration="1500"
       >
@@ -282,25 +246,26 @@
         <div class="kreise"></div>
       </div>
       <div
-        class="line10 hideOnMobile"
-        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
-        data-aos-duration="1500"
-        v-show="!renderWithFadeIns"
-      >
-        <img
-          :src="require('../grid-bilder/Line-10.png')"
-          fluid
-          alt="Linie 10"
-        />
-      </div>
-      <div
-        class="lineNew10"
+        class="line7"
         :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
         data-aos-duration="1500"
       >
         <div class="kreise"></div>
         <div class="strich"></div>
         <div class="kreise"></div>
+      </div>
+      <div
+        class="gl"
+        :data-aos="renderWithFadeIns ? 'zoom-in-right' : ''"
+        data-aos-duration="1500"
+      >
+        <div class="kreise"></div>
+        <div class="kreise"></div>
+        <div class="kreise"></div>
+        <div class="kreise"></div>
+        <div class="strich_horizontal"></div>
+        <div class="strich_vertical"></div>
+        <div class="strich_vertical"></div>
       </div>
     </div>
     <div class="unit" v-if="nav === 'Developement'">
@@ -401,7 +366,7 @@
 
 <script>
 export default {
-  props: ["nav"],
+  props: ["nav", "selectedMember"],
   css: ["~/assets/css/style.css"],
   data() {
     return {
@@ -621,10 +586,16 @@ export default {
     };
   },
   created() {
+    console.log(this.$props);
     if (window.innerWidth <= 760) {
       console.log("Disable FadeIns");
       this.renderWithFadeIns = false;
     }
+  },
+  methods: {
+    teamClicked(team) {
+      this.$emit("teamClickedFromBodyComponent", team);
+    },
   },
 };
 </script>

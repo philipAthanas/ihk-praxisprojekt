@@ -136,13 +136,40 @@ body {
   row-gap: 25px;
 }
 
+/* Line Grid Areas */
+.line1 {
+  grid-area: line1;
+}
+.line2 {
+  grid-area: line2;
+}
+.line3 {
+  grid-area: line3;
+}
+.line4 {
+  grid-area: line4;
+}
+.line5 {
+  grid-area: line5;
+}
+.line6 {
+  grid-area: line6;
+}
+.line7 {
+  grid-area: line7;
+}
+.gl {
+  grid-area: gl;
+}
+
 .nav_home {
   grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto 100px auto 30px auto;
   grid-template-areas:
     "team1 team2 . . team3 team4"
-    "line1 line2 group36 group36 line8 line9"
-    "line1 team5 team6 team7 line8 line9"
-    "line1 line3 line4 line10 line8 line9"
+    "line1 line2 gl gl line6 line7"
+    "line1 team5 team6 team7 line6 line7"
+    "line1 line3 line4 line5 line6 line7"
     "team8 team9 team10 team11 team12 team13";
 }
 
@@ -195,63 +222,6 @@ body {
 
 .team13 {
   grid-area: team13;
-}
-
-.line1 {
-  grid-area: line1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.line2 {
-  grid-area: line2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.line3 {
-  grid-area: line3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.line4 {
-  grid-area: line4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.group36 {
-  grid-area: group36;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.line8 {
-  grid-area: line8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.line9 {
-  grid-area: line9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.line10 {
-  grid-area: line10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 div[class^="team"] {
@@ -389,6 +359,9 @@ GroupContainer
 .employee {
   padding: 20% 20% 0px 20%;
 }
+.employee > div {
+  cursor: pointer;
+}
 
 .TeamColor {
   width: 100%;
@@ -418,7 +391,46 @@ div[class^="line"] {
   flex-direction: column;
   align-items: center;
 }
-div[class^="line"] .kreise {
+.gl {
+  position: relative;
+  margin: 0 calc(25% - 10px);
+}
+.gl * {
+  position: absolute;
+}
+.gl div:nth-child(1),
+.gl div:nth-child(2) {
+  top: auto;
+  bottom: 0;
+}
+.gl div:nth-child(2),
+.gl div:nth-child(3) {
+  left: auto;
+  right: 0;
+}
+.gl .strich_vertical {
+  width: 3px;
+  height: 100%;
+  background-color: gray;
+}
+.gl .strich_horizontal {
+  height: 3px;
+  width: 100%;
+  background-color: gray;
+}
+.gl div:nth-child(5) {
+  top: calc(5px - 1.5px);
+}
+/* strich vertical */
+.gl div:nth-child(6) {
+  left: calc(5px - 1.5px);
+}
+.gl div:nth-child(7) {
+  left: auto;
+  right: calc(5px - 1.5px);
+}
+div[class^="line"] .kreise,
+.gl .kreise {
   background-color: gray;
   height: 10px;
   width: 10px;
@@ -426,60 +438,38 @@ div[class^="line"] .kreise {
 }
 div[class^="line"] .strich {
   background-color: gray;
-  height: 50px;
+  height: calc(100% - 20px);
   width: 3px;
 }
-.line1 .strich {
-  height: 100% !important;
-}
-div[class^="lineNew"] {
-  display: none;
-}
+
 @media (max-width: 760px) {
-  .lineNew1 {
-    grid-area: lineNew1;
-  }
-  .lineNew2 {
-    grid-area: lineNew2;
-  }
-  .lineNew3 {
-    grid-area: lineNew3;
-  }
-  .lineNew4 {
-    grid-area: lineNew4;
-  }
-  .lineNew8 {
-    grid-area: lineNew8;
-  }
-  .lineNew9 {
-    grid-area: lineNew9;
-  }
-  .lineNew10 {
-    grid-area: lineNew10;
+  .gl {
+    grid-area: unset;
+    display: none;
   }
   .nav_home {
-    grid-template-rows: repeat(20, auto);
+    grid-template-rows: repeat(20, minmax(30px, auto));
     grid-template-columns: 1fr;
     grid-template-areas:
       "team1"
-      "lineNew1"
+      "line1"
       "team8"
       "team2"
-      "lineNew2"
+      "line2"
       "team5"
-      "lineNew3"
+      "line3"
       "team9"
       "team6"
-      "lineNew4"
+      "line4"
       "team10"
       "team7"
-      "lineNew10"
+      "line5"
       "team11"
       "team3"
-      "lineNew8"
+      "line6"
       "team12"
       "team4"
-      "lineNew9"
+      "line7"
       "team13";
     grid-gap: 25px;
     padding: 20% 7%;
@@ -517,7 +507,6 @@ div[class^="lineNew"] {
     text-align: center;
   }
   .box2_trennlinie,
-  .hideOnMobile,
   .body div[class^="group"] {
     grid-area: unset;
     display: none;

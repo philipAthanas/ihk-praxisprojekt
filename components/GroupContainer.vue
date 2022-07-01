@@ -6,7 +6,11 @@
         <img :src="require('../grid-bilder/Ellipse 1.png')" fluid alt="Icon" />
       </div>
       <div class="employee">
-        <div v-for="item in people" v-bind:key="item.name">
+        <div
+          v-for="item in people"
+          v-bind:key="item.name"
+          @click="clickOnTeamMember(item)"
+        >
           <!-- loop für alle Elemente in people-->
           <!-- item = frei wählbare Variable um die Keys anzusprechen die gerade im Array geloopt werden -->
           <h3>{{ item.name }}</h3>
@@ -68,7 +72,23 @@
 
 <script>
 export default {
-  props: ["people", "colorHeader", "headIcon", "nav", "renderWithFadeIns"],
+  props: [
+    "people",
+    "colorHeader",
+    "headIcon",
+    "nav",
+    "renderWithFadeIns",
+    "team",
+    "selectedMember",
+  ],
+  mounted() {
+    // console.log("selectedMember", this.$props);
+  },
+  methods: {
+    clickOnTeamMember(member) {
+      this.$emit("teamClicked", [this.$props.team, member.name]);
+    },
+  },
 };
 </script>
 
