@@ -58,8 +58,8 @@
           <div class="employeeContact">
             <p>{{ people[0].tel }}</p>
             <div class="mail_container">
-              <p>MAIL:</p>
-              <a :href="`mailto:${people[0].mail}`">
+              <p>MAIL:&nbsp;</p>
+              <a :href="`mailto: ${people[0].mail}`">
                 <p>{{ people[0].mail }}</p>
               </a>
             </div>

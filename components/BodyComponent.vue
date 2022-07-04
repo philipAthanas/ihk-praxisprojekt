@@ -382,12 +382,6 @@ export default {
         ],
         DevelopementTeam: [
           {
-            name: "TARIK E.",
-            position: "Fullstack Developer",
-            tel: "MOBIL: 01573 7532227",
-            mail: "t.ermis@integr8.com",
-          },
-          {
             name: "JAKOB S.",
             position: "Fullstack Developer",
             tel: "MOBIL: 0170 0000000",
@@ -424,10 +418,10 @@ export default {
         ],
         Director: [
           {
-            name: "BLANCA R.",
+            name: "NN",
             position: "Strategy Director",
-            tel: "MOBIL: 0162 2409081",
-            mail: "b.deramonrius@integr8.com",
+            tel: "MOBIL: 0170 00000000",
+            mail: "m.muster@integr8.com",
           },
         ],
         StrategyTeam: [
@@ -442,6 +436,24 @@ export default {
             position: "Jr. Strategy",
             tel: "MOBIL: 0179 2125261",
             mail: "s.marquart@integr8.com",
+          },
+          {
+            name: "BÜNYAMIN Y.",
+            position: "Werkstudent",
+            tel: "MOBIL: 0179 0000000",
+            mail: "b.yaman@integr8.com",
+          },
+          {
+            name: "CHIARA M.",
+            position: "Jr. Strategist",
+            tel: "MOBIL: 0179 0000000",
+            mail: "c.massafra@integr8.com",
+          },
+          {
+            name: "DANIEL S.",
+            position: "Digital Product Designer",
+            tel: "MOBIL: 0179 0000000",
+            mail: "d.sacharov@integr8.com",
           },
         ],
       },
@@ -486,7 +498,7 @@ export default {
             mail: "k.vanmeegen@integr8.com",
           },
           {
-            name: "AILEEN D.",
+            name: "SAKURA D.",
             position: "Praktikantin",
             tel: "MOBIL: 0157 34903736",
             mail: "s.dorn@integr8.com",
@@ -508,6 +520,12 @@ export default {
             position: "Copywriter",
             tel: "MOBIL: 0176 80660936",
             mail: "m.krause@integr8.com",
+          },
+          {
+            name: "VINCENT H.",
+            position: "Copywriter",
+            tel: "MOBIL: 0176 80660936",
+            mail: "v.hessling@integr8.com",
           },
         ],
       },
@@ -552,12 +570,6 @@ export default {
         ],
         MarketingTeam: [
           {
-            name: "FLORIAN P.",
-            position: "Data Analyst",
-            tel: "MOBIL: 01578 8881337",
-            mail: " MAIL: f.petereit@integr8.com",
-          },
-          {
             name: "KRYSTYNA G.",
             position: "SEO Managerin",
             tel: "MOBIL: 01575 0967761",
@@ -574,12 +586,6 @@ export default {
             position: "Sr. Performance Marketing Manager",
             tel: "MOBIL: 0172 4113348",
             mail: "s.saglam@integr8.com",
-          },
-          {
-            name: "TIM F.",
-            position: "Marketing Strategist",
-            tel: "MOBIL: 0172 5954655",
-            mail: "t.franzke@integr8.com",
           },
         ],
       },
