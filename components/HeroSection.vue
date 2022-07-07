@@ -98,7 +98,6 @@
       :selectedMember="this.selectedMember"
       @teamClickedFromBodyComponent="teamClicked"
     />
-    <!-- nach dem : Variable in Anführungszeichen der Value -->
   </div>
 </template>
 

@@ -20,7 +20,7 @@ body {
 @font-face {
   font-family: "ProximaNova-Bold";
   src: local("ProximaNova-Bold"),
-    url(./i8-Fonts/ProximaNova-Bold.otf) format("opentype"); /*font anpassen und file unter assets ablegen ... opentype zum setzen der schrift */
+    url(./i8-Fonts/ProximaNova-Bold.otf) format("opentype"); 
 }
 
 .header,
